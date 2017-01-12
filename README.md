@@ -11,23 +11,18 @@ UI Kit that implemented BEM CSS for class naming standard.
 
 ### Using CSS Native : 
 ```html
-&lt;!-- bem-kit css depedency --&gt;
-&lt;link  rel="stylesheet" href="{URL_PATH}/css/bem-kit.min.css" rel="stylesheet"/&gt;
+<link  rel="stylesheet" href="{URL_PATH}/css/bem-kit.min.css" rel="stylesheet"/>
 ```
 
 ### Using SASS Import : 
 ```scss
-&lt;!-- import from your sass file --&gt;
 @import "./bem-kit/src/scss/_bem-kit";
 ```
 
 ### Added Javascript Functionality (Optional)
 ```html
-&lt;!-- jquery library - {optional - if you want use the script} --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
-
-&lt;!-- bem-kit js depedency {optional - if you want use the script} --&gt;
-&lt;script type="text/javascript" src="{URL_PATH}/js/bem-kit.min.js"&gt;&lt;/script&gt;
+<script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{URL_PATH}/js/bem-kit.min.js"></script>
 ```
 
 ## Supported Component (in alphabetical order)</h3>
