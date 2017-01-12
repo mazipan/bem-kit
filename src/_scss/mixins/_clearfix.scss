@@ -1,0 +1,23 @@
+@mixin clearfix()
+{
+    *zoom: 1;
+    &:before,
+    &:after
+    {
+        display: table;
+        content: ' ';
+    }
+    &:after
+    {
+        clear: both;
+    }
+}
+
+@mixin row()
+{    
+    @include clearfix(); 
+    margin: 0 auto;
+    max-width: 92.308em;
+}
+
+

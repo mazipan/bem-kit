@@ -1,0 +1,6 @@
+@import "../_components/checkboxes";
+
+.checkbox
+{
+    @extend %checkbox;
+}

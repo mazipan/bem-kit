@@ -1,0 +1,77 @@
+%checkbox
+{
+    position: absolute;
+    left: -9999px;
+
+    & + label
+    {
+        position: relative;
+        display: inline-block;
+        padding: 6px 30px;
+        cursor: pointer;
+
+        &:before
+        {
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $greyLight;
+            border-radius: 1px;
+            background: $white;
+            content: '';
+        }
+        &:after
+        {
+            position: absolute;
+            top: 7px;
+            left: 4px;
+            color: #09ad7e;
+            content: '\2714';
+            font-size: 1.2rem;
+            line-height: 1;
+            transition: all .2s;
+        }
+    }
+    &:not(:checked) + label:after
+    {
+        opacity: 0;
+        transform: scale(0);
+    }
+    &:checked
+    {
+        & + label:before
+        {
+            border-color: $blue;
+            background: $blue;
+        }
+        & + label:after
+        {
+            color: $white;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+    &:disabled
+    {
+        & + label
+        {
+            color: #aaa;
+        }
+        & + label:before
+        {
+            border-color: #bbb;
+            background-color: #ddd;
+            box-shadow: none;
+        }
+        & + label:after
+        {
+            color: #999;
+        }
+    }
+    &:focus + label:before
+    {
+        border: 1px dotted $blue;
+    }
+}

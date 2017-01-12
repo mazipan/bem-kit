@@ -1,0 +1,36 @@
+%alert-close-rule{
+    position: relative;
+    top: -4px;
+    right: -21px;
+    padding: 0 20px;
+    float: right;
+    font-size: 1.6rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+%alert{
+    padding: 15px;
+    margin-bottom: 20px; 
+    background: none;
+
+    &--radius{
+        @include border-radius(.25em);         
+    }
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            border: 1px dashed nth($buttonVariansHex, $i);
+            color: nth($buttonVariansHex, $i);
+
+            .alert__close{
+                @extend %alert-close-rule;
+                color: nth($buttonVariansHex, $i);
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

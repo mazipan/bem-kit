@@ -1,0 +1,63 @@
+%tabs
+{
+    @extend %reset-list;
+
+    &__item
+    {
+        display: inline-block;
+        a
+        {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+
+            &:hover
+            {
+                background-color: $greyLighter;
+                text-decoration: none;
+            }
+        }
+        &--active
+        {
+            border-bottom: 2px solid $blue;
+
+            a
+            {
+                color: $blackDarker;
+            }
+        }
+    }
+    // v stand for vertical
+    &__itemv
+    {
+        display: block;
+        margin: .2em 0;
+
+        a
+        {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            background-color: $greyLighter;
+            text-decoration: none;
+
+            &:hover
+            {
+                background-color: $greyLight;
+                text-decoration: none;
+            }
+        }
+        &--active
+        {
+            border-left: 2px solid $blue;
+            background-color: $greyLight;
+
+            a
+            {
+                background-color: $greyLight;
+                color: $blackDarker;
+            }
+        }
+    }
+}

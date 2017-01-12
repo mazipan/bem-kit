@@ -1,0 +1,43 @@
+@import "../_components/textfield";
+
+.textfield
+{
+    @extend %textfield;
+
+    &__helper {
+        @extend %textfield__helper;
+    }
+
+    &__error {
+        @extend %textfield__error;
+    }
+        
+    &--error
+    {
+        @extend %textfield--error;
+    }
+    
+    &--large 
+    {
+        @extend %textfield--large;
+    }
+    
+    &--radius
+    {
+        @extend %textfield--radius;
+    }
+
+    &--radius-left
+    {
+        @extend %textfield--radius-left;
+    }
+
+    &--radius-right
+    {
+        @extend %textfield--radius-right;
+    }
+
+    &--shadow{
+        @extend %textfield--shadow !optional;
+    }
+}

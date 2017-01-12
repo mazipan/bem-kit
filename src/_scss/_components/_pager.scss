@@ -1,0 +1,50 @@
+%pager {
+    font-size: 1.4rem;
+    @extend %reset-list;
+
+    &__page{
+		text-decoration: none;
+	    position: relative;
+	    float: left;
+	    padding: 8px 15px;
+	    margin-left: -5px;
+	    background-color: $white;
+	    color: $blue;
+		border: 1px solid $greyLight;
+
+		&--active{
+			text-decoration: none;
+			color: $blackDarker;
+			background-color: $greyLight;
+		}
+
+		&:focus{
+			text-decoration: none;
+		}
+		
+		&:hover{
+			text-decoration: none;
+			color: $blackDarker;
+			background-color: $greyLight;
+		}
+	}
+
+    li{
+    	display: inline-block;
+    }
+
+    &--radius{
+    	li{    		
+	    	&:first-child>a, &:first-child>span {
+			    border-top-left-radius: 0.25em;
+			    border-bottom-left-radius: 0.25em;
+			}
+
+			&:last-child>a, &:last-child>span {
+			    border-top-right-radius: 0.25em;
+			    border-bottom-right-radius: 0.25em;
+			}
+    	}
+    }
+
+}

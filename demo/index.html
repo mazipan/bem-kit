@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="en">
+<head>
+        <meta name="robots" content="index, follow"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <title>BEM KIT | Demo & Cheatsheet</title>
+
+        <meta name="language" content="id-ID"/>
+        <meta name="author" content="Irfan Maulana"/>
+        <meta name="keywords" content="css, bem css, bem framework, css framework, ui kit"/>
+        <meta name="description" content="UI Kit that use BEM CSS for class naming standard" />
+
+        <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts"/>
+        <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan"/>
+
+        <meta property="og:title" content="BEM KIT | Demo & Cheatsheet" />
+        <meta property="og:description" content="UI Kit that use BEM CSS for class naming standard"/>
+        <meta property="og:url" content="https://mazipan.github.io/bem-kit/demo/"/>
+
+        <meta property="og:image" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
+        <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
+
+        <meta property="og:site_name" content="mazipan.github.io"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:image:width" content="500"/>
+        <meta property="og:image:height" content="500"/>
+
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@maz_ipan"/>
+        <meta name="twitter:creator" content="@maz_ipan"/>
+        <meta name="twitter:title" content="BEM KIT | Demo & Cheatsheet"/>
+        <meta name="twitter:description" content="UI Kit that use BEM CSS for class naming standard"/>
+        <meta name="twitter:image:src" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
+        <meta name="twitter:image:width" content="500"/>
+        <meta name="twitter:image:height" content="500"/>
+        <meta name="twitter:domain" content="https://mazipan.github.io/bem-kit/demo/"/>
+        
+        <link rel="stylesheet" type="text/css" href="../dist/bem-kit.css"> 
+        <link rel="stylesheet" type="text/css" href="../dist/demo.css"> 
+        <link rel="stylesheet" type="text/css" href="https://mazipan.github.io/library/prism.min.css"> 
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-25065548-2', 'auto');
+          ga('send', 'pageview');
+        </script>
+
+</head>
+<body class="site">
+
+  
+  <header role="header" class="site__header header" id="header">
+      <div class="header__wrapper">
+        <div class="header__brand">        
+          <a href="https://mazipan.github.io/demo">
+              <img src="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png" />
+          </a>
+        </div>
+      </div>
+  </header>
+
+  
+  <main role="main" class="site__main main" id="main">
+      <div class="main__jumbotron">
+        <div class="main__jumbotron-wrapper">
+          <div class="grid__row">
+            <h1>
+              Awesome-BEMCSS
+            </h1>
+            <h2>
+              Lightweight CSS framework that build in top of SASS with BEM CSS convention as alternative of Twitter Bootstrap.
+            </h2>
+          </div>
+          <div class="grid__row">            
+            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit/releases">
+              <i class="fa fa-cloud-download"></i> Download
+            </a>
+            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit">
+              <i class="fa fa-github"></i> Fork on Github
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__row">        
+        <h1>BEM KIT
+          <small>(demo and cheatsheet)</small>
+        </h1>
+      </div>
+      <div class="main__row">
+        
+        <nav role="nav" class="main__nav nav" id="nav">
+          <ul class="nav__tabs tabs tabs--vertical">
+              <li class="tabs__itemv tabs__itemv--active" data-target="#overview" onclick="_trackLink('tab vertical overview', 'demo bem-kit', 'click')">
+                <a href="#overview">Overview</a>
+              </li>
+              <li class="tabs__itemv" data-target="#typography" onclick="_trackLink('tab vertical typo', 'demo bem-kit', 'click')">
+                <a href="#typography">Typography</a>
+              </li>
+              <li class="tabs__itemv" data-target="#grids" onclick="_trackLink('tab vertical grid', 'demo bem-kit', 'click')">
+                <a href="#grids">Grids</a>
+              </li>
+              <li class="tabs__itemv" data-target="#buttons" onclick="_trackLink('tab vertical button', 'demo bem-kit', 'click')">
+                <a href="#buttons">Buttons</a>
+              </li>
+              <li class="tabs__itemv" data-target="#forms" onclick="_trackLink('tab vertical form', 'demo bem-kit', 'click')">
+                <a href="#forms">Forms</a>
+              </li>
+              <li class="tabs__itemv" data-target="#card" onclick="_trackLink('tab vertical card', 'demo bem-kit', 'click')">
+                <a href="#card">Card</a>
+              </li>
+              <li class="tabs__itemv" data-target="#modal" onclick="_trackLink('tab vertical modal', 'demo bem-kit', 'click')">
+                <a href="#modal">Modal</a>
+              </li>
+              <li class="tabs__itemv" data-target="#table" onclick="_trackLink('tab vertical table', 'demo bem-kit', 'click')">
+                <a href="#table">Table</a>
+              </li>
+          </ul>
+        </nav>
+
+        <article class="main__content content" id="content">
+
+          <section class="content__overview" id="overview">
+            <h2 class="content__title">Overview</h2>
+            <h4>Blocks, Elements and Modifiers</h4>
+            <p>
+              <strong>Blocks : </strong>Standalone entity that is meaningful on its own.
+              <br>
+              Examples : <code>header</code>, <code>container</code>, <code>menu</code>, <code>checkbox</code>, <code>input</code>
+            </p>
+            <p>
+              <strong>Element : </strong>Parts of a block and have no standalone meaning. They are semantically tied to its block.
+              <br>
+              Examples : <code>menu item</code>, <code>list item</code>, <code>checkbox caption</code>, <code>header title</code>
+            </p>
+            <p>
+              <strong>Modifier : </strong>Flags on blocks or elements. Use them to change appearance or behavior.
+              <br>
+              Examples : <code>disabled</code>, <code>highlighted</code>, <code>checked</code>, <code>fixed</code>, <code>size big</code>, <code>color yellow</code>
+            </p>
+            <p>
+              Further Reading : <a href="http://getbem.com/introduction/">http://getbem.com/introduction/</a> 
+            </p>
+            <p>
+              See Github Repo : <a href="https://github.com/mazipan/bem-kit">https://github.com/mazipan/bem-kit</a> 
+            </p>
+
+            <h4>How to use</h4>
+
+
+<b>Using CSS Native : </b> 
+<pre>
+<code class="language-markup">
+&lt;!-- bem-kit css depedency --&gt;
+&lt;link  rel="stylesheet" href="{URL_PATH}/css/bem-kit.min.css" rel="stylesheet"/&gt;
+
+&lt;!-- jquery library {optional - if you want use the script} --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- bem-kit js depedency - {optional - if you want use the script} --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/bem-kit.min.js"&gt;&lt;/script&gt;</code>
+</pre>
+
+<b>Using SASS Import : </b>
+<pre>
+<code class="language-markup">
+&lt;!-- import from your sass file --&gt;
+@import "./bem-kit/src/scss/_bem-kit";
+</code>
+</pre>
+
+          </section>
+
+          <section class="content__typography" id="typography">
+            <h2 class="content__title">Typography</h2>
+            <div class="content__wrapper">
+              <div class="content__col-sm">              
+                <h4>Heading</h4>
+                <h1>h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+              </div>
+              <div class="content__col-lg">
+                  <h4>Paragraph</h4>
+                  <p>
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  Lorem ipsum dolor sit amet 
+                  </p>
+
+                  <h4>Blockquote</h4>
+                  <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                  </blockquote>
+
+                </div>
+              </div>
+          </section>
+
+          <section class="content__grids" id="grids">
+            <h2 class="content__title">Grids</h2>          
+            <h4>Row And Columns</h4>
+            <div class="content__wrapper grid">
+              <div class="grid__row">grid__row (total col in row = 12)</div>
+              <div class="grid__row">
+                <div class="grid__col-12">grid__col-12</div>
+              </div>           
+              <div class="grid__row">
+                <div class="grid__col-3">grid__col-3</div>
+                <div class="grid__col-3">grid__col-3</div>
+                <div class="grid__col-6">grid__col-10</div>
+              </div>
+              <div class="grid__row">
+                <div class="grid__offset-1">grid__offset-1</div>
+              </div>
+              <div class="grid__row">
+                <div class="grid__offset-2">grid__offset-2</div>
+              </div>
+              <div class="grid__row">
+                <div class="grid__offset-3">grid__offset-3</div>
+              </div>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for grid --&gt;
+&lt;div class="grid"&gt;
+  &lt;div class="grid__row"&gt;grid__row (total col in row = 12)&lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-12"&gt;grid__col-12&lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
+    &lt;div class="grid__col-3"&gt;grid__col-3&lt;/div&gt;
+    &lt;div class="grid__col-6"&gt;grid__col-6&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__offset-1"&gt;grid__offset-1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__offset-2"&gt;grid__offset-2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="grid__row"&gt;
+    &lt;div class="grid__offset-3"&gt;grid__offset-3&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            <h4>Flex Box</h4>
+            <div class="content__wrapper">            
+              <div class="grid__flex">
+                <div class="grid__item">div in flex box</div>
+                <div class="grid__item">div in flex box</div>
+                <div class="grid__item">div in flex box</div>
+                <div class="grid__item">div in flex box</div>
+              </div>
+              <div class="grid__flex">
+                <div class="grid__item">div in flex box</div>
+                <div class="grid__item">div in flex box</div>
+                <div class="grid__item">div in flex box</div>
+              </div>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for grid with flex --&gt;
+&lt;div class="grid__flex"&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+  &lt;div class="grid__item"&gt;div in flex box&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          </section>
+
+          <section class="content__buttons" id="buttons">
+            <h2 class="content__title">Buttons</h2>
+            <h4>Button</h4>
+            <div class="content__wrapper">
+              <button class="button button--green">button--green</button>
+              <button class="button button--red">button--red</button>
+              <button class="button button--blue">button--blue</button>
+              <button class="button button--orange">button--orange</button>
+              <button class="button button--gray">button--gray</button>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button--green"&gt;button button--green&lt;/button&gt;
+&lt;button class="button button--red"&gt;button button--red&lt;/button&gt;
+&lt;button class="button button--blue"&gt;button button--blue&lt;/button&gt;
+&lt;button class="button button--orange"&gt;button button--orange&lt;/button&gt;
+&lt;button class="button button--gray"&gt;button button--gray&lt;/button&gt;</code></pre>
+
+            <h4>Button Link</h4>
+            <div class="content__wrapper">
+              <a href="javascript:void(0)" class="button button--green">button--green</a>
+              <a href="javascript:void(0)" class="button button--red">button--red</a>
+              <a href="javascript:void(0)" class="button button--blue">button--blue</a>
+              <a href="javascript:void(0)" class="button button--orange">button--orange</a>
+              <a href="javascript:void(0)" class="button button--gray">button--gray</a>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;a href="javascript:void(0)" class="button button--green"&gt;button button--green&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--red"&gt;button button--red&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--blue"&gt;button button--blue&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--orange"&gt;button button--orange&lt;/a&gt;
+&lt;a href="javascript:void(0)" class="button button--gray"&gt;button button--gray&lt;/a&gt;</code></pre>
+
+            <h4>Buttons Outline</h4>
+            <div class="content__wrapper">
+              <button class="button button-outline--green">button-outline--green</button>
+              <button class="button button-outline--red">button-outline--red</button>
+              <button class="button button-outline--blue">button-outline--blue</button>
+              <button class="button button-outline--orange">button-outline--orange</button>
+              <button class="button button-outline--gray">button-outline--gray</button>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button-outline--green"&gt;button button-outline--green&lt;/button&gt;
+&lt;button class="button button-outline--red"&gt;button button-outline--red&lt;/button&gt;
+&lt;button class="button button-outline--blue"&gt;button button-outline--blue&lt;/button&gt;
+&lt;button class="button button-outline--orange"&gt;button button-outline--orange&lt;/button&gt;
+&lt;button class="button button-outline--gray"&gt;button button-outline--gray&lt;/button&gt;</code></pre>
+
+            <h4>Button Radius</h4>
+            <div class="content__wrapper">
+              <button class="button button--radius button--green">button-radius--green</button>
+              <button class="button button--radius button--red">button-radius--red</button>
+              <button class="button button--radius button--blue">button-radius--blue</button>
+              <button class="button button--radius button--orange">button-radius--orange</button>
+              <button class="button button--radius button--gray">button-radius--gray</button>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button --&gt;
+&lt;button class="button button--radius button--green"&gt;button button--radius button--green&lt;/button&gt;
+&lt;button class="button button--radius button--red"&gt;button button--radius button--red&lt;/button&gt;
+&lt;button class="button button--radius button--blue"&gt;button button--radius button--blue&lt;/button&gt;
+&lt;button class="button button--radius button--orange"&gt;button button--radius button--orange&lt;/button&gt;
+&lt;button class="button button--radius button--gray"&gt;button button--radius button--gray&lt;/button&gt;</code></pre>
+
+            <h4>Buttons Dropdown</h4>
+            <div class="content__wrapper">
+              <button class="button button--dropdown button--green">
+                <i class="fa fa-cog"></i>    
+
+                <ul class="button__menu" role="menu">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>         
+              </button>
+              <button class="button button--dropdown button--red">
+                <i class="fa fa-cog"></i>    
+
+                <ul class="button__menu" role="menu">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </button>
+              <button class="button button--dropdown button--blue">
+                <i class="fa fa-cog"></i>    
+                
+                <ul class="button__menu" role="menu">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </button>
+              <button class="button button--dropdown button--orange">
+                <i class="fa fa-cog"></i>    
+
+                <ul class="button__menu" role="menu">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </button>
+              <button class="button button--dropdown button--gray">
+                <i class="fa fa-cog"></i>    
+                
+                <ul class="button__menu" role="menu">
+                  <li><a href="#">25</a></li>
+                  <li><a href="#">50</a></li>
+                  <li><a href="#">100</a></li>
+                </ul>
+              </button>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for button--dropdown --&gt;
+&lt;button class="button button--dropdown button--gray"&gt;
+  &lt;i class="fa fa-cog"&gt;&lt;/i&gt; 
+
+  &lt;ul class="button__menu" role="menu"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;25&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;50&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;100&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/button&gt;</code></pre>
+
+          </section>
+
+          <section class="content__forms" id="forms">
+            <h2 class="content__title">Forms</h2>
+            <h4>Textfield</h4>
+            <div class="content__wrapper">
+              <input class="textfield" id="textfield-1" placeholder="textfield" />
+              <input class="textfield textfield--shadow" id="textfield-2" placeholder="textfield textfield--shadow" />
+              <input class="textfield textfield--radius" id="textfield-3" placeholder="textfield textfield--radius"/>
+              <input class="textfield textfield--error" id="textfield-4" placeholder="textfield textfield--error"/>
+              <input class="textfield textfield--large" id="textfield-5" placeholder="textfield textfield--large" />
+              <span class="textfield__helper">This is helper text<span>
+              <span class="textfield__error">This is helper error message<span>
+            </div>
+
+            <h4>Text Area</h4>
+            <div class="content__wrapper">
+              <textarea class="textfield" id="textarea-1" rows="3" placeholder="textfield" ></textarea>
+              <textarea class="textfield textfield--radius" rows="3" id="textarea-3" placeholder="textfield textfield--radius"></textarea>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for textfield --&gt;
+&lt;input class="textfield" id="textfield-1" placeholder="textfield" /&gt;
+&lt;input class="textfield textfield--shadow" id="textfield-2" placeholder="textfield textfield--shadow"/&gt;
+&lt;input class="textfield textfield--error" id="textfield-3" placeholder="textfield textfield--error"/&gt;
+&lt;input class="textfield textfield--radius" id="textfield-4" placeholder="textfield textfield--radius"/&gt;
+&lt;input class="textfield textfield--large" id="textfield-5" placeholder="textfield textfield--large" /&gt;
+&lt;span class="textfield__helper"&gt;This is helper text&lt;span&gt;
+&lt;span class="textfield__error"&gt;This is helper error message&lt;span&gt;</code></pre>
+
+            <h4>Input Select Box</h4>
+            <div class="content__wrapper">
+              <select class="select" id="select_box-1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select class="select select--radius" id="select_box-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select multiple class="select" id="select_box-3">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select multiple class="select select--radius" id="select_box-4">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for select --&gt;
+&lt;select class="select" id="select_box-1"&gt;
+  &lt;option value="1"&gt;1&lt;/option&gt;
+  &lt;option value="2"&gt;2&lt;/option&gt;
+  &lt;option value="3"&gt;3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+            <h4>Checkboxes</h4>
+            <div class="content__wrapper">
+              <input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/>
+              <label for="checkbox-1">Check 1</label>
+              <input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/>
+              <label for="checkbox-2">Check 2</label>
+              <input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/>
+              <label for="checkbox-3">Check 3</label>
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for checkbox --&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/&gt;
+&lt;label for="checkbox-1"&gt;Check 1&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-2" name"checkbox"/&gt;
+&lt;label for="checkbox-2"&gt;Check 2&lt;/label&gt;
+&lt;input class="checkbox" type="checkbox" id="checkbox-3" name"checkbox"/&gt;
+&lt;label for="checkbox-3"&gt;Check 3&lt;/label&gt;</code></pre>
+            </div>
+
+            <h4>Radio</h4>
+            <div class="content__wrapper">
+              <input class="radio" type="radio" id="radio-1" name="radio"/>
+              <label for="radio-1">Yes</label>
+              <input class="radio" type="radio" id="radio-2" name="radio"/>
+              <label for="radio-2">No</label>     
+            </div>
+            <div class="content__wrapper">
+              <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
+              <label for="radio-3">Yes</label>
+              <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
+              <label for="radio-4">No</label>       
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for radio --&gt;
+&lt;input class="radio" type="radio" id="radio-1" name"radio"/&gt;
+&lt;label for="radio-1"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-2" name"radio"/&gt;
+&lt;label for="radio-2"&gt;No&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-3" name"radio--blue"/&gt;
+&lt;label for="radio-3"&gt;Yes&lt;/label&gt;
+&lt;input class="radio" type="radio" id="radio-4" name"radio--blue"/&gt;
+&lt;label for="radio-4"&gt;No&lt;/label&gt;</code></pre>
+            </div>
+
+            <h4>Form Group</h4>
+            <div class="content__wrapper form">
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <input class="textfield" placeholder="I am placeholder" />            
+              </div>
+              <div class="form__group">
+                <div class="form__label form__label--required">
+                  I am required label :
+                </div>    
+                <input class="textfield" placeholder="I am placeholder" />            
+              </div>
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <div class="form__wrapper">
+                  <input class="checkbox" type="checkbox" id="checkbox-form-1" name"checkbox-form"/>
+                  <label for="checkbox-form-1">Check 1</label>
+                  <input class="checkbox" type="checkbox" id="checkbox-form-2" name"checkbox-form"/>
+                  <label for="checkbox-form-2">Check 2</label>                  
+                </div>          
+              </div>
+              <div class="form__group">
+                <div class="form__label">
+                  I am label :
+                </div>    
+                <div class="form__wrapper">
+                  <input class="radio" type="radio" id="radio-form-1" name="radio-form"/>
+                  <label for="radio-form-1">Yes</label>
+                  <input class="radio" type="radio" id="radio-form-2" name="radio-form"/>
+                  <label for="radio-form-2">No</label>                   
+                </div>          
+              </div>
+              <div class="form__group">
+                <div class="form__icon form__icon--radius-left">
+                  Rp.
+                </div>
+                <input class="textfield" placeholder="I am placeholder" />                
+              </div>
+              <div class="form__group">
+                <input class="textfield" placeholder="I am placeholder" /> 
+                <div class="form__icon form__icon--radius-right">
+                  @gmail.com
+                </div>               
+              </div>
+            </div>
+
+            <h4>Alert</h4>
+            <div class="content__wrapper">
+              <div class="alert alert--radius alert--green">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--green
+              </div>                
+              <div class="alert alert--radius alert--red">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--red
+              </div> 
+              <div class="alert alert--radius alert--blue">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--blue
+              </div>    
+              <div class="alert alert--radius alert--orange">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--orange
+              </div>    
+              <div class="alert alert--radius alert--gray">
+                <a href="javascript:void(0)" class="alert__close">x</a>
+                <strong>Info!</strong> alert alert--radius alert--gray
+              </div>         
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for alert --&gt;
+&lt;div class="alert alert--radius alert--green"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--green
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--red"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--red
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--blue"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--blue
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--orange"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--orange
+&lt;/div&gt; 
+&lt;div class="alert alert--radius alert--gray"&gt;
+  &lt;a href="javascript:void(0)" class="alert__close"&gt;x&lt;/a&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; alert alert--radius alert--gray
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h4>Popover</h4>
+            <div class="content__wrapper">
+              <div class="popover">
+                <span>Hover Me, I am popover !</span>
+                <div class="popover__content">
+                  Hello, I am popover__content !
+                </div>
+              </div>            
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for popover --&gt;
+&lt;div class="popover"&gt;
+  &lt;span&gt;Hover Me, I am popover !&lt;/span&gt;
+  &lt;div class="popover__content"&gt;
+    Hello, I am popover__content !
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+
+            <h4>Tabs</h4>
+            <div class="content__wrapper">
+
+                <h5>Tabs Horizontal</h5>        
+                <ul class="tabs">
+                  <li class="tabs__item tabs__item--active" data-target="#overview">
+                    <a href="#overview">Overview</a>
+                  </li>
+                  <li class="tabs__item" data-target="#typography">
+                    <a href="#typography">Typography</a>
+                  </li>
+                  <li class="tabs__item" data-target="#grids">
+                    <a href="#grids">Grids</a>
+                  </li>
+                  <li class="tabs__item" data-target="#buttons">
+                    <a href="#buttons">Buttons</a>
+                  </li>
+                  <li class="tabs__item" data-target="#forms">
+                    <a href="#forms">Forms</a>
+                  </li>
+                  <li class="tabs__item" data-target="#table">
+                    <a href="#table">Table</a>
+                  </li>
+                </ul>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for tabs --&gt;
+&lt;ul class="tabs"&gt;
+  &lt;li class="tabs__item tabs__item--active" data-target="#overview"&gt;
+    &lt;a href="#overview"&gt;Overview&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#typography"&gt;
+    &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#grids"&gt;
+    &lt;a href="#grids"&gt;Grids&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#buttons"&gt;
+    &lt;a href="#buttons"&gt;Buttons&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#forms"&gt;
+    &lt;a href="#forms"&gt;Forms&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__item" data-target="#table"&gt;
+    &lt;a href="#table"&gt;Table&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+                <h5>Tabs Vertical</h5>            
+                <ul class="tabs tabs--vertical">
+                  <li class="tabs__itemv tabs__itemv--active" data-target="#overview">
+                    <a href="#overview">Overview</a>
+                  </li>
+                  <li class="tabs__itemv" data-target="#typography">
+                    <a href="#typography">Typography</a>
+                  </li>
+                  <li class="tabs__itemv" data-target="#grids">
+                    <a href="#grids">Grids</a>
+                  </li>
+                  <li class="tabs__itemv" data-target="#buttons">
+                    <a href="#buttons">Buttons</a>
+                  </li>
+                  <li class="tabs__itemv" data-target="#forms">
+                    <a href="#forms">Forms</a>
+                  </li>
+                  <li class="tabs__itemv" data-target="#table">
+                    <a href="#table">Table</a>
+                  </li>
+                </ul>
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for tabs vertical --&gt;
+&lt;ul class="tabs tabs--vertical"&gt;
+  &lt;li class="tabs__itemv tabs__itemv--active" data-target="#overview"&gt;
+    &lt;a href="#overview"&gt;Overview&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#typography"&gt;
+    &lt;a href="#typography"&gt;Typography&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#grids"&gt;
+    &lt;a href="#grids"&gt;Grids&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#buttons"&gt;
+    &lt;a href="#buttons"&gt;Buttons&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#forms"&gt;
+    &lt;a href="#forms"&gt;Forms&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class="tabs__itemv" data-target="#table"&gt;
+    &lt;a href="#table"&gt;Table&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+            </div>
+
+          </section>
+
+          <section class="content__card" id="card">
+            <h2 class="content__title">Card</h2>
+            
+            <h4>Card Flat</h4>
+            <div class="content__wrapper"> 
+                
+                <div class="card card--green">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--red">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--blue">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--orange">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--gray">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+            </div>
+
+            <h4>Card Radius</h4>
+            <div class="content__wrapper"> 
+                
+                <div class="card card--green card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--red card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--blue card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--orange card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+                <div class="card card--gray card--radius">
+                  <div class="card__header">
+                    <div class="card__title">Title Card</div>
+                    <div class="card__tools">
+                      <i class="fa fa-cog"></i>
+                    </div>
+                  </div>
+                  <div class="card__content">
+                    Sample of content
+                  </div>
+                </div>
+
+            </div>
+
+            <div class="content__wrapper">
+<pre><code class="language-markup">
+&lt;!-- snippet code for card --&gt;
+&lt;div class="card card--green"&gt;card card--green&lt;/div&gt;
+&lt;div class="card card--green card--radius"&gt;card card--gray card--radius&lt;/div&gt;</code></pre>
+            </div>
+
+          </section>
+
+          <section class="content__card" id="modal">
+            <h2 class="content__title">Modal</h2>
+            <div class="content__wrapper"> 
+
+              <button class="button button--blue" 
+                      data-show="modal"
+                      data-target="modalPlain">
+                Open Modal              
+              </button>
+              <button class="button button--blue" 
+                      data-show="modal"
+                      data-target="modalBlue">
+                Open Modal              
+              </button>
+              <button class="button button--blue" 
+                      data-show="modal"
+                      data-target="modalBorder">
+                Open Modal              
+              </button>
+
+              <div id="modalPlain" class="modal" role="modal">
+                <div class="modal__content">
+                  <div class="modal__header">
+                    <span class="modal__close">×</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal__body">
+                    <p>Some text in the Modal Body</p>
+                  </div>
+                  <div class="modal__footer">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modalBlue" class="modal" role="modal">
+                <div class="modal__content">
+                  <div class="modal__header modal__header--blue">
+                    <span class="modal__close">×</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal__body">
+                    <p>Some text in the Modal Body</p>
+                  </div>
+                  <div class="modal__footer modal__footer--blue">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div id="modalBorder" class="modal" role="modal">
+                <div class="modal__content">
+                  <div class="modal__header modal__header--border">
+                    <span class="modal__close">×</span>
+                    <h2>Modal Header</h2>
+                  </div>
+                  <div class="modal__body">
+                    <p>Some text in the Modal Body</p>
+                  </div>
+                  <div class="modal__footer modal__footer--border">
+                    <h3>Modal Footer</h3>
+                  </div>
+                </div>
+              </div>
+
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for modal button trigger --&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalPlain"&gt;
+  Open Modal 
+&lt;/button&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalBlue"&gt;
+  Open Modal 
+&lt;/button&gt;
+&lt;button class="button button--blue" data-show="modal" data-target="modalBorder"&gt;
+  Open Modal 
+&lt;/button&gt;
+
+&lt;!-- snippet code for modal varian --&gt;
+&lt;div id="modalPlain" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="modalBlue" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header modal__header--blue"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer modal__footer--blue"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id="modalBorder" class="modal" role="modal"&gt;
+  &lt;div class="modal__content"&gt;
+    &lt;div class="modal__header modal__header--border"&gt;
+      &lt;span class="modal__close"&gt;&times;&lt;/span&gt;
+      &lt;h2&gt;Modal Header&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__body"&gt;
+      &lt;p&gt;Some text in the Modal Body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="modal__footer modal__footer--border"&gt;
+      &lt;h3&gt;Modal Footer&lt;/h3&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+            </div>
+          </section>
+
+          <section class="content__table" id="table">
+            <h2 class="content__title">Table</h2>
+            <div class="content__wrapper">              
+                
+                <h4>Table</h4>  
+                <table class="table"> 
+                  <thead class="table__head"> 
+                    <tr> 
+                      <th class="table__sort--asc" sortable="true">#</th> 
+                      <th class="table__sort--desc" sortable="true">First Name</th> 
+                      <th>Last Name</th> 
+                      <th>Username</th> 
+                    </tr> 
+                  </thead> 
+                  <tbody class="table__body"> 
+                    <tr> 
+                      <td>1</td> 
+                      <td>Mark</td> 
+                      <td>Otto</td> 
+                      <td>@mdo</td>
+                    </tr> 
+                    <tr> 
+                      <td>2</td> 
+                      <td>Jacob</td> 
+                      <td>Thornton</td> 
+                      <td>@fat</td> 
+                    </tr> 
+                    <tr> 
+                      <td>3</td> 
+                      <td>Larry</td> 
+                      <td>the Bird</td> 
+                      <td>@twitter</td> 
+                    </tr> 
+                  </tbody> 
+                </table>      
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for table --&gt;
+&lt;table class="table"&gt;
+  &lt;thead class="table__head"&gt;
+    &lt;tr&gt;
+      &lt;th class="table__sort--asc" sortable="true"&gt;#&lt;/th&gt;
+      &lt;th class="table__sort--desc" sortable="true"&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody class="table__body"&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;<br /> &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+                <h4>Pagination</h4>   
+                <ul class="pager"> 
+                  <li> 
+                    <a href="javascript:void(0)" class="pager__page">Previous</a> 
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">1</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">2</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">3</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">4</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">5</a>
+                  </li> 
+                  <li> 
+                    <a href="javascript:void(0)" class="pager__page">Next</a> 
+                  </li> 
+                </ul> 
+
+                <ul class="pager pager--radius"> 
+                  <li> 
+                    <a href="javascript:void(0)" class="pager__page">Previous</a> 
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">1</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">2</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">3</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">4</a>
+                  </li> 
+                  <li>
+                    <a href="javascript:void(0)" class="pager__page">5</a>
+                  </li> 
+                  <li> 
+                    <a href="javascript:void(0)" class="pager__page">Next</a> 
+                  </li> 
+                </ul> 
+
+<pre><code class="language-markup">
+&lt;!-- snippet code for pager --&gt;
+&lt;ul class="pager"&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Previous&lt;/a&gt; 
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;1&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;2&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;3&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;4&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;5&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Next&lt;/a&gt; 
+  &lt;/li&gt; 
+&lt;/ul&gt;
+
+&lt;!-- snippet code for pager--radius --&gt;
+&lt;ul class="pager pager--radius"&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Previous&lt;/a&gt; 
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;1&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;2&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;3&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;4&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt;
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;5&lt;/a&gt;
+  &lt;/li&gt; 
+  &lt;li&gt; 
+    &lt;a href="javascript:void(0)" class="pager__page"&gt;Next&lt;/a&gt; 
+  &lt;/li&gt; 
+&lt;/ul&gt;</code></pre>
+                
+            </div>
+          </section>
+
+        </article>
+
+      </div>    
+  </main>
+
+  <footer role="footer" class="site__footer footer" id="footer">
+    <div class="footer__wrapper">
+
+      <div class="footer__text">
+        <span>Crafted with &nbsp;<i class="fa fa-heart-o"></i>&nbsp; by Irfan Maulana</span>
+      </div>
+
+      <ul class="footer__list">
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.facebook.com/mazipanneh">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://twitter.com/Maz_Ipan">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://instagram.com/maz_ipan">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://id.linkedin.com/in/irfanmaulanamazipan">
+            <i class="fa fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://www.slideshare.net/IrfanMaulana21">
+            <i class="fa fa-slideshare"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://github.com/mazipan">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li class="footer__icon">
+          <a rel="nofollow" href="https://mazipanneh.wordpress.com/">
+            <i class="fa fa-wordpress"></i>
+          </a>
+        </li>
+      </ul>
+
+      <div class="footer__text">
+        <span>Copyright © 2016</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://mazipan.github.io/library/jquery.min.js"></script>
+  <script src="../dist/bem-kit.min.js"></script>
+  <script src="https://mazipan.github.io/library/prism.min.js"></script>
+  <script src="https://use.fontawesome.com/89344806bd.js"></script>
+  
+  <script>
+    function _trackLink(linkClick, category, action){
+        if(!category) category = 'Link';
+        if(!action) action = 'click';
+        ga('send', {
+          hitType: 'event',
+          eventCategory: category,
+          eventAction: action,
+          eventLabel: linkClick
+        });
+      }    
+
+      $(window).load(function(){
+        try{
+          _trackLink('demo bem-kit', 'demo', 'visit directly');
+        }catch(err){}
+      });
+  </script>
+
+</body>
+</html>

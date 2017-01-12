@@ -1,0 +1,15 @@
+@import "../_components/select";
+
+.select
+{
+    @extend %select;
+    
+    &--radius
+    {
+        @extend %select--radius;
+    }
+
+    &--shadow{
+        @extend %select--shadow !optional;
+    }
+}

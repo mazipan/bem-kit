@@ -1,0 +1,27 @@
+@import "../_components/tabs";
+
+.tabs
+{
+    @extend %tabs;
+
+    &__item
+    {
+        @extend %tabs__item;
+
+        &--active
+        {
+            @extend %tabs__item--active;
+        }
+    }
+
+    // v stand for vertical
+    &__itemv
+    {
+        @extend %tabs__itemv;
+
+        &--active
+        {
+            @extend %tabs__itemv--active;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "../_components/table";
+
+.table
+{
+    @extend %table;
+
+    &__head
+    {
+        @extend %table__head;
+    }
+
+    &__body
+    {
+        @extend %table__body;
+    }
+
+    &__sort
+    {
+        @extend %table__sort !optional;
+
+    	&--asc
+    	{
+            @extend %table__sort--asc;
+    	}
+    	&--desc
+    	{
+            @extend %table__sort--desc;
+    	}
+    }
+}

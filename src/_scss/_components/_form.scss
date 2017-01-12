@@ -1,0 +1,39 @@
+
+%form{
+    &__group{
+        @extend %flex;
+    }
+
+    &__wrapper{
+        width: 100%;
+        padding: 7px 0;
+    }
+
+    &__label{
+        width: 20%;
+        min-width: 100px;
+
+        &--required{
+            &:after{
+                content: '*';
+                color: $red;
+            }
+        }
+    }
+
+    &__icon{
+        color: $black;
+        background-color: $greyLight;
+        padding: 7px 12px;
+
+        &--radius-left{
+            border-top-left-radius: 0.25em;
+            border-bottom-left-radius: 0.25em;
+        }
+
+        &--radius-right{
+            border-top-right-radius: 0.25em;
+            border-bottom-right-radius: 0.25em;         
+        }
+    }
+}

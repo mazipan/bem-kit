@@ -1,0 +1,918 @@
+/* line 1, D:/Github/bemkit/src/_scss/helpers/_list.scss */
+.nav__tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 13, D:/Github/bemkit/src/_scss/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, D:/Github/bemkit/src/_scss/_normalize.scss */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, D:/Github/bemkit/src/_scss/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, D:/Github/bemkit/src/_scss/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, D:/Github/bemkit/src/_scss/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 72, D:/Github/bemkit/src/_scss/_normalize.scss */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 81, D:/Github/bemkit/src/_scss/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 92, D:/Github/bemkit/src/_scss/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 105, D:/Github/bemkit/src/_scss/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 115, D:/Github/bemkit/src/_scss/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 125, D:/Github/bemkit/src/_scss/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 135, D:/Github/bemkit/src/_scss/_normalize.scss */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 144, D:/Github/bemkit/src/_scss/_normalize.scss */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 154, D:/Github/bemkit/src/_scss/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 165, D:/Github/bemkit/src/_scss/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 173, D:/Github/bemkit/src/_scss/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 182, D:/Github/bemkit/src/_scss/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 191, D:/Github/bemkit/src/_scss/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 199, D:/Github/bemkit/src/_scss/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* line 203, D:/Github/bemkit/src/_scss/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 214, D:/Github/bemkit/src/_scss/_normalize.scss */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 223, D:/Github/bemkit/src/_scss/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 232, D:/Github/bemkit/src/_scss/_normalize.scss */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 240, D:/Github/bemkit/src/_scss/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 252, D:/Github/bemkit/src/_scss/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 268, D:/Github/bemkit/src/_scss/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 278, D:/Github/bemkit/src/_scss/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 289, D:/Github/bemkit/src/_scss/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 300, D:/Github/bemkit/src/_scss/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 312, D:/Github/bemkit/src/_scss/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 323, D:/Github/bemkit/src/_scss/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 336, D:/Github/bemkit/src/_scss/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 350, D:/Github/bemkit/src/_scss/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, D:/Github/bemkit/src/_scss/_normalize.scss */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, D:/Github/bemkit/src/_scss/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, D:/Github/bemkit/src/_scss/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, D:/Github/bemkit/src/_scss/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 397, D:/Github/bemkit/src/_scss/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 407, D:/Github/bemkit/src/_scss/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 420, D:/Github/bemkit/src/_scss/_normalize.scss */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 429, D:/Github/bemkit/src/_scss/_normalize.scss */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 440, D:/Github/bemkit/src/_scss/_normalize.scss */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 448, D:/Github/bemkit/src/_scss/_normalize.scss */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 459, D:/Github/bemkit/src/_scss/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* line 1, D:/Github/bemkit/src/_scss/_base.scss */
+html {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  font-size: 62.5%;
+  color: #333333;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 8, D:/Github/bemkit/src/_scss/_base.scss */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 11, D:/Github/bemkit/src/_scss/_base.scss */
+body {
+  font-size: 1.3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+
+/* line 16, D:/Github/bemkit/src/_scss/_base.scss */
+a {
+  color: #068AC9;
+  text-decoration: none; }
+  /* line 20, D:/Github/bemkit/src/_scss/_base.scss */
+  a:hover, a:focus {
+    text-decoration: underline; }
+
+/* line 25, D:/Github/bemkit/src/_scss/_base.scss */
+code, kbd, pre, samp {
+  background-color: #eaeaea;
+  padding: .1em .5em;
+  border-radius: .1em; }
+
+/* line 31, D:/Github/bemkit/src/_scss/_base.scss */
+blockquote {
+  padding: 10px;
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+  border-left: 5px solid #eee; }
+
+/* line 38, D:/Github/bemkit/src/_scss/_base.scss */
+textarea {
+  resize: none; }
+
+/* line 1, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.site__main {
+  *zoom: 1; }
+  /* line 4, D:/Github/bemkit/src/_scss/mixins/_clearfix.scss */
+  .site__main:before, .site__main:after {
+    display: table;
+    content: ' '; }
+  /* line 10, D:/Github/bemkit/src/_scss/mixins/_clearfix.scss */
+  .site__main:after {
+    clear: both; }
+
+/* line 5, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.main__row, .content__wrapper {
+  *zoom: 1;
+  margin: 0 auto;
+  max-width: 92.308em; }
+  /* line 4, D:/Github/bemkit/src/_scss/mixins/_clearfix.scss */
+  .main__row:before, .content__wrapper:before, .main__row:after, .content__wrapper:after {
+    display: table;
+    content: ' '; }
+  /* line 10, D:/Github/bemkit/src/_scss/mixins/_clearfix.scss */
+  .main__row:after, .content__wrapper:after {
+    clear: both; }
+
+/* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.main__nav {
+  float: left;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+    .main__nav {
+      width: 16.6666666667%; } }
+
+/* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.content__col-sm {
+  float: left;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+    .content__col-sm {
+      width: 33.3333333333%; } }
+
+/* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.content__col-lg {
+  float: left;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+    .content__col-lg {
+      width: 66.6666666667%; } }
+
+/* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+.main__content {
+  float: left;
+  width: 100%; }
+  @media only screen and (min-width: 768px) {
+    /* line 22, D:/Github/bemkit/src/_scss/_components/_grids.scss */
+    .main__content {
+      width: 83.3333333333%; } }
+
+/*
+border: 1px solid #00d1b2;
+border-right: 0;
+border-top: 0;
+content: " ";
+display: block;
+height: 7px;
+pointer-events: none;
+position: absolute;
+-webkit-transform: rotate(-45deg);
+transform: rotate(-45deg);
+width: 7px;
+margin-top: -6px;
+right: 16px;
+top: 50%;
+*/
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+/*
+-- SITE BLOCK --
+* every block should in seperate file 
+* for demo I combine into one file
+*/
+/* line 8, D:/Github/bemkit/src/demo.scss */
+.site {
+  margin: 0; }
+  /* line 12, D:/Github/bemkit/src/demo.scss */
+  .site__main {
+    margin-top: 60px; }
+
+/*
+-- MAIN BLOCK --
+*/
+/* line 24, D:/Github/bemkit/src/demo.scss */
+.main__jumbotron {
+  width: 100%;
+  height: 500px;
+  background-color: #068AC9; }
+  /* line 29, D:/Github/bemkit/src/demo.scss */
+  .main__jumbotron h1 {
+    color: #fff;
+    font-style: italic;
+    font-size: 5rem; }
+  /* line 34, D:/Github/bemkit/src/demo.scss */
+  .main__jumbotron h2 {
+    color: #fff;
+    font-style: italic;
+    font-weight: normal; }
+  /* line 40, D:/Github/bemkit/src/demo.scss */
+  .main__jumbotron-wrapper {
+    margin: 0 auto;
+    padding-top: 10em;
+    padding-left: 3em; }
+
+@media screen and (max-width: 640px) {
+  /* line 49, D:/Github/bemkit/src/demo.scss */
+  .main__nav {
+    display: none; } }
+
+/* line 58, D:/Github/bemkit/src/demo.scss */
+.main__content {
+  padding: 20px; }
+
+/*
+-- HEADER BLOCK --
+*/
+/* line 69, D:/Github/bemkit/src/demo.scss */
+.header {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95294); }
+  /* line 80, D:/Github/bemkit/src/demo.scss */
+  .header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 85, D:/Github/bemkit/src/demo.scss */
+  .header__brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: .2em; }
+    /* line 92, D:/Github/bemkit/src/demo.scss */
+    .header__brand img {
+      height: 45px; }
+  /* line 97, D:/Github/bemkit/src/demo.scss */
+  .header__title {
+    font-style: italic;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: .5em; }
+  /* line 103, D:/Github/bemkit/src/demo.scss */
+  .header__nav {
+    margin-right: 2em; }
+    /* line 106, D:/Github/bemkit/src/demo.scss */
+    .header__nav a {
+      color: #4d4d4d;
+      text-decoration: none;
+      font-size: 1.2rem; }
+      /* line 112, D:/Github/bemkit/src/demo.scss */
+      .header__nav a:hover {
+        color: #1a1a1a; }
+    @media screen and (max-width: 640px) {
+      /* line 103, D:/Github/bemkit/src/demo.scss */
+      .header__nav {
+        display: none; } }
+
+/*
+-- NAVIGATION BLOCK --
+*/
+/*
+-- CONTENT BLOCK --
+*/
+/* line 140, D:/Github/bemkit/src/demo.scss */
+.content__title {
+  padding: 7px 0;
+  border-bottom: 1px solid #B6B6B6; }
+
+/* line 144, D:/Github/bemkit/src/demo.scss */
+.content__wrapper {
+  padding: 10px 0; }
+
+/*
+-- GRID BLOCK --
+*/
+/* line 161, D:/Github/bemkit/src/demo.scss */
+.grid__flex, .grid__row {
+  margin: 2px 0; }
+
+/* line 164, D:/Github/bemkit/src/demo.scss */
+.grid__item {
+  width: 100%;
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-1 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-2 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-3 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-4 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-5 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-6 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-7 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-8 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-9 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-10 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-11 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 175, D:/Github/bemkit/src/demo.scss */
+.grid__col-12 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-1 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-2 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-3 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-4 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-5 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-6 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-7 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-8 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-9 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-10 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-11 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/* line 182, D:/Github/bemkit/src/demo.scss */
+.grid__offset-12 {
+  padding: 1em 0;
+  border: 1px solid #B6B6B6;
+  text-align: center; }
+
+/*
+-- FOR DEMO ONLY --
+*/
+/* line 193, D:/Github/bemkit/src/demo.scss */
+.button {
+  margin: .1em; }
+
+/* line 197, D:/Github/bemkit/src/demo.scss */
+.popover {
+  text-align: center;
+  padding: 1em 0;
+  border: 1px solid #B6B6B6; }
+
+/* line 203, D:/Github/bemkit/src/demo.scss */
+.card {
+  display: inline-block;
+  width: 25%;
+  margin: 1em 0 0 1em;
+  height: 150px; }
+
+/*
+-- FOOTER BLOCK --
+*/
+/* line 213, D:/Github/bemkit/src/demo.scss */
+.footer {
+  margin: 0 auto;
+  padding: 20px 0;
+  background: #068AC9;
+  color: #fff; }
+  /* line 220, D:/Github/bemkit/src/demo.scss */
+  .footer__wrapper {
+    text-align: center; }
+  /* line 224, D:/Github/bemkit/src/demo.scss */
+  .footer__text {
+    font-size: .9rem; }
+  /* line 228, D:/Github/bemkit/src/demo.scss */
+  .footer__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 235, D:/Github/bemkit/src/demo.scss */
+  .footer__icon {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1.6rem; }
+    /* line 241, D:/Github/bemkit/src/demo.scss */
+    .footer__icon i {
+      color: #fff; }
+/*# sourceMappingURL=demo.css.map */

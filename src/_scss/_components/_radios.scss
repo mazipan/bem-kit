@@ -1,0 +1,68 @@
+%radio
+{
+    position: absolute;
+    left: -9999px;
+
+    & + label
+    {
+        position: relative;
+        padding: 10px 30px;
+        cursor: pointer;
+
+        &:before,
+        &:after
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: $black;
+            font-size: 2.8rem;
+            transition: all .2s;
+        }
+        &:before
+        {
+            content: '\25CE';
+            opacity: 1;
+        }
+        &:after
+        {
+            content: '\25C9';
+            opacity: 0;
+        }
+    }
+    &:checked
+    {
+        & + label:before
+        {
+            opacity: 0;
+        }
+        & + label:after
+        {
+            opacity: 1;
+        }
+    }
+    &:disabled
+    {
+        & + label
+        {
+            color: #aaa;
+        }
+        & + label:before
+        {
+            border-color: #bbb;
+            background-color: #ddd;
+            box-shadow: none;
+        }
+        & + label:after
+        {
+            color: #999;
+        }
+    }
+    &--blue + label
+    {
+        &:before, &:after
+        {
+            color: $blue;
+        }
+    }
+}

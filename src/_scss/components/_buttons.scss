@@ -1,0 +1,33 @@
+@import "../_components/buttons";
+
+.button
+{
+    
+    @extend %button;
+
+    &--radius{
+        @extend %button--radius;         
+    }
+    
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            @extend %button--#{nth($buttonVariansName, $i)};            
+        }
+    }
+
+    @for $j from 1 through length($buttonVariansName) {  
+        &-outline--#{nth($buttonVariansName, $j)} {
+            @extend %button-outline--#{nth($buttonVariansName, $j)};
+        }
+    }
+
+
+    &--dropdown{
+        @extend %button--dropdown;
+    }
+
+    &__menu{
+        @extend %button__menu;
+    }
+
+}

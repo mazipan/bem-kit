@@ -1,0 +1,9 @@
+@import "../_components/popover";
+
+.popover{
+    @extend %popover;
+
+    &__content{
+    	@extend %popover__content;
+    }
+}

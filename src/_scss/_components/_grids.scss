@@ -1,0 +1,44 @@
+%clearfix{
+	@include clearfix();
+}
+
+%row {
+	@include clearfix();
+	margin: 0 auto;
+    max-width: 92.308em;
+}
+
+%flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+$columnCount 		: 12 !default;
+$breakPointDesktop 	: 768 !default;
+$breakPointTablet	: 600 !default;
+
+@for $i from 1 through $columnCount {
+	%col-#{$i}{
+		float: left;
+		width: 100%;
+
+		@media only screen and (min-width: #{$breakPointDesktop}px) {
+			width: ((100/$columnCount) * $i) *1%;
+		}
+		
+	}
+
+	%col-m-#{$i}{
+		float: left;
+
+		@media only screen and (min-width: #{$breakPointTablet}px) {
+			width: ((100/$columnCount) * $i) *1%;
+		}
+		
+	}
+
+	%offset-#{$i}{
+		margin-left: ((100/$columnCount) * $i) *1%;
+	}
+}

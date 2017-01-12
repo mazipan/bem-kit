@@ -1,0 +1,43 @@
+@import "../_components/modal";
+
+.modal
+{
+    
+    @extend %modal;
+
+    &__header {
+        @extend %modal__header;
+
+        &--border{
+            @extend %modal__header--border;
+        }
+
+        &--blue{
+            @extend %modal__header--blue;
+        }
+    }
+
+    &__content {
+        @extend %modal__content;
+    }
+
+    &__body {
+        @extend %modal__body;
+    }
+
+    &__footer {
+        @extend %modal__footer;
+        
+         &--border{
+            @extend %modal__footer--border;
+        }
+
+        &--blue{
+            @extend %modal__footer--blue;
+        }
+    }
+
+    &__close {
+        @extend %modal__close;
+    }
+}

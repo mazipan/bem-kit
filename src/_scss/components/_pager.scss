@@ -1,0 +1,18 @@
+@import "../_components/pager";
+
+.pager {
+    @extend %pager;
+
+    &__page{
+        @extend %pager__page;
+
+        &--active{
+            @extend %pager__page--active;
+        }
+    }
+
+    &--radius{
+        @extend %pager--radius;
+    }
+
+}

@@ -1,2 +1,59 @@
-# bemkit
-BEM UI Kit - New Repository of Awesome-BEMCSS
+UI Kit that implemented BEM CSS for class naming standard.
+
+## Download
+- See latest release : https://github.com/mazipan/bem-kit/releases
+- With npm : <code>npm install bem-kit</code>
+
+## Demo And Cheatsheet
+<a href="https://mazipan.github.io/bem-kit/demo/">https://mazipan.github.io/bem-kit/demo/</a>
+
+## Usage
+
+### Using CSS Native : 
+```html
+&lt;!-- bem-kit css depedency --&gt;
+&lt;link  rel="stylesheet" href="{URL_PATH}/css/bem-kit.min.css" rel="stylesheet"/&gt;
+```
+
+### Using SASS Import : 
+```scss
+&lt;!-- import from your sass file --&gt;
+@import "./bem-kit/src/scss/_bem-kit";
+```
+
+### Added Javascript Functionality (Optional)
+```html
+&lt;!-- jquery library - {optional - if you want use the script} --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/jquery.min.js"&gt;&lt;/script&gt;
+
+&lt;!-- bem-kit js depedency {optional - if you want use the script} --&gt;
+&lt;script type="text/javascript" src="{URL_PATH}/js/bem-kit.min.js"&gt;&lt;/script&gt;
+```
+
+## Supported Component (in alphabetical order)</h3>
+- alert 
+- button (basic, outline, radius, dropdown)
+- card
+- checkbox (black and blue theme)
+- form 
+- grid system (traditional grid and flex)
+- modal (white and blue theme)
+- pagination (basic and radius)
+- popover (dark theme)
+- radio (black and blue theme)
+- select
+- table (support sort arrow view)
+- tabs (horizontal and vertical)
+- textfield (basic for input text and textarea)
+
+## Using Technology</h3>
+- SCSS from SASS 
+- HTML
+- NodeJS, Grunt, etc.
+
+## License
+MIT License
+
+
+Hope will usefull for you all.
+Question ? please email : mazipanneh@gmail.com

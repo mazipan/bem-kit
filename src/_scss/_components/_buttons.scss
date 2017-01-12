@@ -1,0 +1,98 @@
+%button
+{
+    
+    display: inline-block;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+
+    &:hover, &:focus, &:active
+    {
+        text-decoration: none;
+    }
+
+    &--radius{
+        @include border-radius(.25em);         
+    }
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            background: nth($buttonVariansHex, $i);
+            color: nth($buttonVariansFont, $i);
+
+            &:hover
+            {
+                background: nth($buttonVariansHover, $i);
+                color: nth($buttonVariansFont, $i);
+            }
+        }
+    }
+
+    @for $j from 1 through length($buttonVariansName) {  
+        &-outline--#{nth($buttonVariansName, $j)} {
+            border: 1px solid nth($buttonVariansHex, $j); 
+            background: transparent; 
+            color: nth($buttonVariansHex, $j);
+
+            &:hover
+            {
+                border: 1px solid nth($buttonVariansHover, $j);
+                color: nth($buttonVariansHover, $j);
+            }
+        }
+    }
+
+
+    &--dropdown{
+        padding: 10px 12px 10px 0;
+
+        &:after{
+            content: '\25BE';
+            font-size: 2rem;
+            position: relative;
+            float: right;
+            padding-left: 1em;
+            margin-top: -6px;  
+            height: 0;     
+        }
+    }
+
+    &__menu{
+        display: none;    
+        position: absolute;
+        z-index: 2;
+        min-width: 160px;
+        border: 1px solid $greyLight;
+        background-color: $white;
+        margin-top: .8em;
+        text-align: left;
+        @extend %reset-list;
+
+        li{
+            a{
+                text-decoration: none;
+                display: block;
+                padding: 7px 20px;
+                clear: both;
+                white-space: nowrap;
+                color: $black;
+                border-bottom: 1px solid $greyLight;
+
+                &:hover{
+                    background-color: $greyLight;
+                }
+            }
+
+            &:last-child{
+                a{
+                    border: 0;
+                }
+            }
+        }
+    }
+
+}

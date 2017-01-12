@@ -1,0 +1,66 @@
+%table
+{
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid $greyLight;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    &__head
+    {
+        th
+        {
+            padding: 8px;
+            border-right: 1px solid $greyLight;
+            border-bottom: 2px solid $greyLight;
+            text-align: left;
+
+            &[sortable="true"]{
+            	cursor: pointer;
+           	} 	
+        }
+    }
+
+    &__body
+    {
+        & > tr
+        {
+            & > td
+            {
+                padding: 8px;
+                border-right: 1px solid $greyLight;
+                text-align: left;
+            }
+            &:nth-of-type(odd)
+            {
+                background-color: $greyLighter;
+            }
+        }
+    }
+
+    &__sort
+    {
+    	&--asc
+    	{
+    		&:after{
+    			content: '\25BE';
+    			font-size: 2rem;
+			    position: relative;
+			    float: right;
+			    margin-top: -7px;
+                height: 0;
+    		}
+    	}
+    	&--desc
+    	{
+    		&:after{
+    			content: '\25B4';
+    			font-size: 2rem;
+			    position: relative;
+			    float: right;
+			    margin-top: -7px;
+                height: 0;
+    		}
+    	}
+    }
+}

@@ -1,0 +1,44 @@
+%card{
+    @include box-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+    @include transition(0.3s);
+
+    &:hover {
+        @include box-shadow(0 8px 16px 0 rgba(0,0,0,0.2));
+    }
+
+    &--radius{
+    	@include border-radius(.25em);    
+    }
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            border: 1px solid nth($buttonVariansHex, $i);
+
+            & > .card__header{
+            	padding: 1em .5em;
+    			background-color: nth($buttonVariansHex, $i);
+            	color: nth($buttonVariansFont, $i);
+
+            	@extend %flex;
+
+    		}
+
+        }
+    }
+
+    &__title{
+        font-size: 1.6rem;
+        font-weight: bold;        
+    }
+    &__tools{
+        & > i {
+            margin: 0 .5em;
+            cursor: pointer;
+        }
+    }
+    &__content{
+    	padding: 1em .5em;
+    }
+
+    
+}

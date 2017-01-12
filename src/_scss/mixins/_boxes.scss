@@ -1,0 +1,18 @@
+// Drop Shadow
+@mixin box-shadow($shadow...)
+{
+    -webkit-box-shadow: $shadow;
+       -moz-box-shadow: $shadow;
+            box-shadow: $shadow;
+}
+
+// Box Sizing
+@mixin box-sizing($box-size)
+{
+    -webkit-box-sizing: $box-size;
+       -moz-box-sizing: $box-size;
+            box-sizing: $box-size;
+
+         -o-box-sizing: $box-size;
+        -ms-box-sizing: $box-size;
+}

@@ -1,0 +1,77 @@
+// Transform: translate3d
+@mixin translate3d($x, $y, $z)
+{
+    -webkit-transform: translate3d($x, $y, $z);
+            transform: translate3d($x, $y, $z);
+}
+
+// Transform: translate XY
+@mixin translate($x, $y)
+{
+    -webkit-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+         -o-transform: translate($x, $y);
+            transform: translate($x, $y);
+}
+
+// Transform: translate X
+@mixin translateX($x)
+{
+    -webkit-transform: translateX($x);
+        -ms-transform: translateX($x);
+         -o-transform: translateX($x);
+            transform: translateX($x);
+}
+// Transform: translate Y
+@mixin translateY($y)
+{
+    -webkit-transform: translateY($y);
+        -ms-transform: translateY($y);
+         -o-transform: translateY($y);
+            transform: translateY($y);
+}
+
+// Backface-visibility
+@mixin backface-visibility($backface)
+{
+    -webkit-backface-visibility: $backface;
+       -moz-backface-visibility: $backface;
+        -ms-backface-visibility: $backface;
+         -o-backface-visibility: $backface;
+            backface-visibility: $backface;
+}
+
+// Transform: rotate
+@mixin rotate($degrees)
+{
+    -webkit-transform: rotate($degrees);
+        -ms-transform: rotate($degrees);
+         -o-transform: rotate($degrees);
+            transform: rotate($degrees);
+}
+
+// Transitions
+@mixin transition($transition...)
+{
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+// Transition Delay
+@mixin transition-delay($transition-delay)
+{
+    -webkit-transition-delay: $transition-delay;
+            transition-delay: $transition-delay;
+}
+
+// Transitions : transform
+@mixin transition-transform($transition...)
+{
+    -webkit-transition: -webkit-transform $transition;
+       -moz-transition:    -moz-transform $transition;
+         -o-transition:      -o-transform $transition;
+            transition:         transform $transition;
+}

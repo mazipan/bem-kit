@@ -1,0 +1,33 @@
+@import "../_components/form";
+
+.form{
+    @extend %form !optional;
+
+     &__group{        
+    	@extend %form__group !optional;
+    }
+
+    &__wrapper{
+        @extend %form__wrapper !optional;
+    }
+
+    &__label{
+    	@extend %form__label !optional;
+
+    	&--required{
+    		@extend %form__label--required !optional;
+        }
+    }
+
+    &__icon{
+    	@extend %form__icon !optional;
+
+        &--radius-left{
+    		@extend %form__icon--radius-left !optional;
+        }
+
+        &--radius-right{
+    		@extend %form__icon--radius-right !optional;           
+        }
+    }
+}

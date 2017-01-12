@@ -1,0 +1,14 @@
+@import "../_components/radios";
+
+.radio
+{
+    @extend %radio;
+    
+    &--blue + label
+    {
+        &:before, &:after
+        {
+            color: $blue;
+        }
+    }
+}

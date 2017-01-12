@@ -1,0 +1,25 @@
+@import "../_components/card";
+
+.card{
+    @extend %card;
+
+    &--radius{
+    	@extend %card--radius;   
+    }
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            @extend %card--#{nth($buttonVariansName, $i)};   
+        }
+    }
+
+    &__title{
+        @extend %card__title;
+    }
+    &__tools{
+        @extend %card__tools !optional;
+    }
+    &__content{
+    	@extend %card__content;
+    }
+}

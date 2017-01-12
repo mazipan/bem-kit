@@ -1,0 +1,15 @@
+@import "../_components/alert";
+
+.alert{
+    @extend %alert;
+
+    &--radius{
+        @extend %alert--radius;         
+    }
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            @extend %alert--#{nth($buttonVariansName, $i)};
+        }
+    }
+}

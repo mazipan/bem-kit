@@ -1,0 +1,246 @@
+@import "_bem-kit";
+
+/*
+-- SITE BLOCK --
+* every block should in seperate file 
+* for demo I combine into one file
+*/
+.site
+{
+    margin: 0;
+
+    &__main
+    {
+        margin-top: 60px;
+        @extend %clearfix;
+    }
+}
+
+/*
+-- MAIN BLOCK --
+*/
+.main
+{
+    &__jumbotron{
+        width: 100%;
+        height: 500px;
+        background-color: $blue;
+
+        h1{
+            color: #fff;
+            font-style: italic;  
+            font-size: 5rem;          
+        }
+        h2{
+            color: #fff;
+            font-style: italic;
+            font-weight: normal;
+        }
+
+        &-wrapper{
+            margin: 0 auto;    
+            padding-top: 10em;
+            padding-left: 3em;
+        }
+    }
+	&__row{
+		@extend %row;
+	}
+    &__nav
+    {
+    	@extend %col-2;
+
+        @media screen and (max-width:640px)
+        {
+            display: none;
+        }
+    }
+    &__content
+    {
+    	@extend %col-10;
+    	padding: 20px;
+    }
+}
+
+/*
+-- HEADER BLOCK --
+*/
+
+.header
+{
+    @include box-shadow(0 1px 2px rgba(0,0,0,0.075));
+
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,.95294);
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__brand
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: .2em;
+
+        img
+        {
+            height: 45px;
+        }
+    }
+    &__title{
+        font-style: italic;
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-left: .5em;
+    }
+    &__nav
+    {
+        margin-right: 2em;
+        a
+        {
+            color: $blackLight;
+            text-decoration: none;
+            font-size: 1.2rem;
+
+            &:hover
+            {
+                color: $blackDark;
+            }
+        }
+
+        @media screen and (max-width:640px)
+        {
+            display: none;
+        }
+    }
+}
+
+/*
+-- NAVIGATION BLOCK --
+*/
+.nav{
+	&__tabs{
+		@extend %tabs;
+	}
+}
+
+
+
+/*
+-- CONTENT BLOCK --
+*/
+.content{
+	&__title{
+		padding: 7px 0;
+		border-bottom: 1px solid $grey;
+	}
+	&__wrapper{
+		@extend %row;
+		padding: 10px 0;
+	}
+	&__col-sm{
+		@extend %col-4;
+	}
+	&__col-lg{
+		@extend %col-8;
+	}
+}
+
+
+/*
+-- GRID BLOCK --
+*/
+.grid{
+    &__flex, &__row{
+        margin: 2px 0;
+    }
+    &__item{
+        width: 100%;
+        padding: 1em 0;
+        border: 1px solid $grey;
+        text-align: center;
+    }
+    
+    $columnCount : 16 !default;
+    $break-medium: 63.750em;
+
+    @for $i from 1 through $columnCount {
+        &__col-#{$i}{
+            padding: 1em 0;
+            border: 1px solid $grey;
+            text-align: center;
+        }
+    }
+    @for $i from 1 through $columnCount {
+        &__offset-#{$i}{
+            padding: 1em 0;
+            border: 1px solid $grey;
+            text-align: center;
+        }
+    }
+}
+
+/*
+-- FOR DEMO ONLY --
+*/
+.button{
+    margin: .1em;
+}
+
+.popover{
+    text-align: center;
+    padding: 1em 0;
+    border: 1px solid $grey;
+}
+
+.card{
+    display: inline-block;
+    width: 25%;    
+    margin: 1em 0 0 1em;
+    height: 150px;
+}
+
+/*
+-- FOOTER BLOCK --
+*/
+.footer
+{
+    margin: 0 auto;
+    padding: 20px 0;
+    background: $blue;
+    color: #fff;
+
+    &__wrapper
+    {
+        text-align: center;
+    }
+    &__text
+    {
+        font-size: .9rem;
+    }
+    &__list
+    {
+        display: block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__icon
+    {
+        display: inline-block;
+        margin: 0 5px;
+        font-size: 1.6rem;
+
+        i
+        {
+            color: #fff;
+        }
+    }
+}

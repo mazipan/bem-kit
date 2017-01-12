@@ -1,0 +1,39 @@
+%popover{
+    position: relative;
+    cursor: pointer;
+
+    &__content{
+    	visibility: hidden;
+	    background-color: $blackLight;
+	    color: $white;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 1em;
+	    position: absolute;
+	    z-index: 1;
+	    bottom: 125%;
+	    left: 50%;
+	    margin-left: -60px;
+	    opacity: 0;
+
+	    @include transition(opacity 1s);
+
+	    &:after {
+		    content: "";
+		    position: absolute;
+		    top: 100%;
+		    left: 50%;
+		    margin-left: -5px;
+		    border-width: 5px;
+		    border-style: solid;
+		    border-color: $blackLight transparent transparent transparent;
+		}
+    }
+
+    &:hover {
+    	.popover__content{    		
+		    visibility: visible;
+		    opacity: 1;
+    	}
+	}
+}
