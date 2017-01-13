@@ -1265,11 +1265,12 @@
         });
       }    
 
-      $(window).load(function(){
+
+      window.onload = function(){
         try{
           _trackLink('demo bem-kit', 'demo', 'visit directly');
         }catch(err){}
-      });
+      };
   </script>
 
 </body>
