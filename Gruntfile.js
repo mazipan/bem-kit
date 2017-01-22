@@ -121,11 +121,9 @@ module.exports = function (grunt) {
                   options: {
                     position: 'top',
                     banner: '/* \n '+
-                            '*   Name        : awesome-bemcss \n '+
-                            '*   Version     : <%= pkg.version %> \n '+
-                            '*   Build Time  : <%= grunt.template.today("yyyy-mm-dd hh:MM") %> \n '+
+                            '*   Name        : BEM-Kit v.<%= pkg.version %> \n '+
                             '*   Author      : Irfan Maulana \n '+
-                            '*   Github Repo : https://github.com/mazipan/awesome-bemcss \n '+
+                            '*   Github Repo : https://github.com/mazipan/bem-kit \n '+
                             '*/',
                     linebreak: true
                   },
