@@ -1,17 +1,16 @@
 UI Kit that implemented BEM CSS for class naming standard.
 
 ## Homepage
-<a href="https://mazipan.github.io/bem-kit/">https://mazipan.github.io/bem-kit/</a>
+https://mazipan.github.io/bem-kit/
 
 ## Download
-- See latest release : https://github.com/mazipan/bem-kit/releases
-- With npm : 
 ```
 npm install bem-kit --save
 ```
+Or download latest release here : https://github.com/mazipan/bem-kit/releases
 
 ## Demo And Cheatsheet
-<a href="https://mazipan.github.io/bem-kit/demo/">https://mazipan.github.io/bem-kit/demo/</a>
+https://mazipan.github.io/bem-kit/demo/
 
 ## Usage
 
