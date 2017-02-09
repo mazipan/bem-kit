@@ -1,5 +1,3 @@
-/*! AwesomeBemCSS by Irfan Maulana*/
-
 /*
 DROPDOWN
 */
