@@ -2,13 +2,14 @@
 {
     
     display: inline-block;
-    padding: 10px 20px;
+    padding: 13px 20px;
     outline: none;
     border: none;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    -webkit-appearance: none;
+
+    @include appearance(none);
 
     &:hover, &:focus, &:active
     {

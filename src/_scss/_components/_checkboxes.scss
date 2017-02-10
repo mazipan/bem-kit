@@ -19,59 +19,64 @@
             height: 18px;
             border: 1px solid $greyLight;
             border-radius: 1px;
-            background: $white;
+            background-color: $white;
             content: '';
         }
         &:after
         {
             position: absolute;
-            top: 7px;
-            left: 4px;
-            color: #09ad7e;
-            content: '\2714';
-            font-size: 1.2rem;
-            line-height: 1;
-            transition: all .2s;
+            color: $white;
+            content: '';
+
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            border-right: 2px solid $white;
+            border-bottom: 2px solid $white;
+
+            @include rotate(37deg);
+            @include transition(border .25s, background-color .25s);
+
+            -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
         }
     }
     &:not(:checked) + label:after
     {
-        opacity: 0;
-        transform: scale(0);
+        width: 0;
+        height: 0;
+        top: 6px;
+        left: 1px;
     }
     &:checked
     {
         & + label:before
         {
             border-color: $blue;
-            background: $blue;
+            background-color: $blue;
         }
         & + label:after
         {
-            color: $white;
-            opacity: 1;
-            transform: scale(1);
+            width: 8px;
+            height: 13px;
+            top: 6px;
+            left: 1px;
         }
     }
     &:disabled
     {
         & + label
         {
-            color: #aaa;
+            color: $greyLight;
         }
         & + label:before
         {
-            border-color: #bbb;
-            background-color: #ddd;
+            border-color: $greyLight;
+            background-color: $greyLighter;
             box-shadow: none;
         }
         & + label:after
         {
-            color: #999;
+            display: none;
         }
-    }
-    &:focus + label:before
-    {
-        border: 1px dotted $blue;
     }
 }
