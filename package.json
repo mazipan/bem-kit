@@ -1,7 +1,7 @@
 {
   "name": "bem-kit",
-  "description": "UI Kit that use BEM CSS for class naming standard.",
-  "version": "0.0.2",
+  "description": "CSS UI Kit Component for BEM Convention Fans",
+  "version": "0.0.3",
   "keywords": [
     "css",
     "bem",

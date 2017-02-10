@@ -6,6 +6,8 @@ https://mazipan.github.io/bem-kit/
 ## Download
 ```
 npm install bem-kit --save
+-- OR --
+yarn add bem-kit
 ```
 Or download latest release here : https://github.com/mazipan/bem-kit/releases
 
@@ -49,7 +51,7 @@ https://mazipan.github.io/bem-kit/demo/
 ## Using Technology</h3>
 - SCSS from SASS 
 - HTML
-- NodeJS, Grunt, etc.
+- NodeJS, Grunt and Gulp, etc.
 
 ## License
 MIT License
