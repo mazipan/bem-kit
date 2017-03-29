@@ -6,18 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-        <title>BEM KIT</title>
+        <title>BEM KIT - HOMEPAGE</title>
 
         <meta name="language" content="id-ID"/>
         <meta name="author" content="Irfan Maulana"/>
         <meta name="keywords" content="css, bem css, bem framework, css framework, ui kit"/>
-        <meta name="description" content="UI Kit that use BEM CSS for class naming standard" />
+        <meta name="description" content="CSS UI Kit using BEM in class naming standard" />
 
         <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts"/>
         <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan"/>
 
         <meta property="og:title" content="BEM KIT" />
-        <meta property="og:description" content="UI Kit that use BEM CSS for class naming standard"/>
+        <meta property="og:description" content="CSS UI Kit using BEM in class naming standard"/>
         <meta property="og:url" content="https://mazipan.github.io/bem-kit/"/>
 
         <meta property="og:image" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
@@ -32,7 +32,7 @@
         <meta name="twitter:site" content="@maz_ipan"/>
         <meta name="twitter:creator" content="@maz_ipan"/>
         <meta name="twitter:title" content="BEM KIT"/>
-        <meta name="twitter:description" content="UI Kit that use BEM CSS for class naming standard"/>
+        <meta name="twitter:description" content="CSS UI Kit using BEM in class naming standard"/>
         <meta name="twitter:image:src" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
         <meta name="twitter:image:width" content="500"/>
         <meta name="twitter:image:height" content="500"/>
@@ -61,7 +61,7 @@
   <header role="header" class="site__header header" id="header">
       <div class="header__wrapper">
         <div class="header__brand">        
-          <a href="https://mazipan.github.io/demo">
+          <a href="https://mazipan.github.io/bem-kit/">
               <img src="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png" />
           </a>
         </div>
@@ -70,27 +70,53 @@
 
   
   <main role="main" class="site__main main" id="main">
-      <div class="main__jumbotron">
+      
+      <section class="main__jumbotron">
         <div class="main__jumbotron-wrapper">
           <div class="grid__row">
-            <img src="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-white.png" />
+            <h1>
+              BEM KIT
+            </h1>
             <h2>
-              UI Kit that use BEM CSS for class naming standard
+              CSS UI Kit using BEM in class naming standard
             </h2>
           </div>
-          <div class="grid__row">            
-            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit/releases">
+          <div class="grid__row"> 
+
+            <a class="button button-outline--white" 
+            href="https://mazipan.github.io/bem-kit/">
+              <i class="fa fa-desktop"></i> Demo And Cheatsheet
+            </a>           
+            <a class="button button-outline--white" 
+            href="https://github.com/mazipan/bem-kit/releases">
               <i class="fa fa-cloud-download"></i> Download
             </a>
-            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit">
+            <a class="button button-outline--white" 
+            href="https://github.com/mazipan/bem-kit">
               <i class="fa fa-github"></i> Source Code
             </a>
-            <a class="button button-outline--white" href="https://mazipan.github.io/bem-kit/demo/">
-              <i class="fa fa-desktop"></i> Demo
-            </a>
+
           </div>
         </div>
-      </div> 
+      </section> 
+
+      <section class="main__row main--center">
+        <h2 class="main__title">Why BEM-KIT ?</h2>
+
+        <div class="grid__row main--center">
+
+            <ul class="main__usp">
+              <li>Using beautiful classname with BEM standard.</li>
+              <li>All component was crafted from zero.</li>
+              <li>You can choose to import RULES only without produce any css classes.</li>
+              <li>You can customize your own classname with rules we provided.</li>
+              <li>You can partialy import from our available component.</li>
+              <li>Full SASS modular code.</li>
+            </ul>
+
+        </div>
+      </section>
+
   </main>
 
   <footer role="footer" class="site__footer footer" id="footer">
