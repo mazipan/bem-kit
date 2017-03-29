@@ -1,0 +1,19 @@
+@import "../rules/label";
+
+.label{
+    @extend %label !optional;
+
+    @for $i from 1 through length($buttonVariansName) {  
+        &--#{nth($buttonVariansName, $i)} {
+            @extend %label--#{nth($buttonVariansName, $i)};
+        }
+
+        &-outline--#{nth($buttonVariansName, $i)} {
+            @extend %label-outline--#{nth($buttonVariansName, $i)};
+        }
+    }
+
+    &--radius{
+    	@extend %label--radius !optional;
+    }
+}

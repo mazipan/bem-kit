@@ -1,0 +1,20 @@
+%label {
+    padding: .1em .5em;
+
+    @for $i from 1 through length($buttonVariansName) {
+        &--#{nth($buttonVariansName, $i)} {
+            background: nth($buttonVariansHex, $i);
+            color: nth($buttonVariansFont, $i);
+        }
+
+        &-outline--#{nth($buttonVariansName, $i)} {
+            border: 1px solid nth($buttonVariansHex, $i); 
+            color: nth($buttonVariansHex, $i);
+        }
+
+    }
+
+    &--radius {
+        border-radius: 2em;
+    }
+}
