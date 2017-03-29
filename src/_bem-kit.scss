@@ -1,33 +1,8 @@
-
-@import "_scss/mixins/appearance";
-@import "_scss/mixins/background";
-@import "_scss/mixins/border-radius";
-@import "_scss/mixins/boxes";
-@import "_scss/mixins/clearfix";
-@import "_scss/mixins/image";
-@import "_scss/mixins/placeholders";
-@import "_scss/mixins/transitions";
-
-// HELPER
-@import "_scss/helpers/colors";
-@import "_scss/helpers/list";
+@import "_all-mixins";
 
 // BASE
 @import "_scss/normalize";
 @import "_scss/base";
 
-// COMPONENT
-@import "_scss/rules/grids";
-@import "_scss/rules/buttons";
-@import "_scss/rules/checkboxes";
-@import "_scss/rules/radios";
-@import "_scss/rules/tabs";
-@import "_scss/rules/textfield";
-@import "_scss/rules/select";
-@import "_scss/rules/table";
-@import "_scss/rules/pager";
-@import "_scss/rules/alert";
-@import "_scss/rules/card";
-@import "_scss/rules/popover";
-@import "_scss/rules/modal";
-@import "_scss/rules/form";
+
+@import "_all-rules";

@@ -1,22 +1,4 @@
 
-@import "_scss/mixins/appearance";
-@import "_scss/mixins/background";
-@import "_scss/mixins/border-radius";
-@import "_scss/mixins/boxes";
-@import "_scss/mixins/clearfix";
-@import "_scss/mixins/image";
-@import "_scss/mixins/placeholders";
-@import "_scss/mixins/transitions";
-
-// HELPER
-@import "_scss/helpers/colors";
-@import "_scss/helpers/list";
-
-// BASE
-// @import "_scss/normalize";
-@import "_scss/base";
-
-// COMPONENT
 @import "_scss/components/grids";
 @import "_scss/components/buttons";
 @import "_scss/components/checkboxes";
@@ -31,3 +13,4 @@
 @import "_scss/components/popover";
 @import "_scss/components/modal";
 @import "_scss/components/form";
+@import "_scss/components/label";
