@@ -6,19 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
-        <title>BEM KIT | Demo & Cheatsheet</title>
+        <title>BEM KIT - Demo & Cheatsheet</title>
 
         <meta name="language" content="id-ID"/>
         <meta name="author" content="Irfan Maulana"/>
         <meta name="keywords" content="css, bem css, bem framework, css framework, ui kit"/>
-        <meta name="description" content="UI Kit that use BEM CSS for class naming standard" />
+        <meta name="description" content="CSS UI Kit using BEM in class naming standard" />
 
         <link rel="author" href="https://plus.google.com/u/0/+irfanmaulana-mazipan/posts"/>
         <link rel="publisher" href="https://plus.google.com/u/0/+irfanmaulana-mazipan"/>
 
         <meta property="og:title" content="BEM KIT | Demo & Cheatsheet" />
-        <meta property="og:description" content="UI Kit that use BEM CSS for class naming standard"/>
-        <meta property="og:url" content="https://mazipan.github.io/bem-kit/demo/"/>
+        <meta property="og:description" content="CSS UI Kit using BEM in class naming standard"/>
+        <meta property="og:url" content="https://mazipan.github.io/bem-kit/"/>
 
         <meta property="og:image" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
         <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
@@ -32,11 +32,11 @@
         <meta name="twitter:site" content="@maz_ipan"/>
         <meta name="twitter:creator" content="@maz_ipan"/>
         <meta name="twitter:title" content="BEM KIT | Demo & Cheatsheet"/>
-        <meta name="twitter:description" content="UI Kit that use BEM CSS for class naming standard"/>
+        <meta name="twitter:description" content="CSS UI Kit using BEM in class naming standard"/>
         <meta name="twitter:image:src" content="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png"/>
         <meta name="twitter:image:width" content="500"/>
         <meta name="twitter:image:height" content="500"/>
-        <meta name="twitter:domain" content="https://mazipan.github.io/bem-kit/demo/"/>
+        <meta name="twitter:domain" content="https://mazipan.github.io/bem-kit/"/>
         
         <link rel="stylesheet" href="../dist/bem-kit.css"> 
         <link rel="stylesheet" href="../dist/demo.css"> 
@@ -62,7 +62,7 @@
   <header role="header" class="site__header header" id="header">
       <div class="header__wrapper">
         <div class="header__brand">        
-          <a href="https://mazipan.github.io/demo">
+          <a href="https://mazipan.github.io/bem-kit/">
               <img src="https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png" />
           </a>
         </div>
@@ -78,16 +78,24 @@
               BEM KIT
             </h1>
             <h2>
-              UI Kit that use BEM CSS for class naming standard
+              CSS UI Kit using BEM in class naming standard
             </h2>
           </div>
-          <div class="grid__row">            
-            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit/releases">
+          <div class="grid__row">    
+
+            <a class="button button-outline--white" 
+            href="https://mazipan.github.io/bem-kit/">
+              <i class="fa fa-home"></i> Homepage
+            </a>           
+            <a class="button button-outline--white" 
+            href="https://github.com/mazipan/bem-kit/releases">
               <i class="fa fa-cloud-download"></i> Download
             </a>
-            <a class="button button-outline--white" href="https://github.com/mazipan/bem-kit">
-              <i class="fa fa-github"></i> Fork on Github
+            <a class="button button-outline--white" 
+            href="https://github.com/mazipan/bem-kit">
+              <i class="fa fa-github"></i> Source Code
             </a>
+
           </div>
         </div>
       </div>
@@ -130,7 +138,7 @@
 
         <article class="main__content content" id="content">
 
-          <section class="content__overview" id="overview">
+          <section class="content--overview" id="overview">
             <h2 class="content__title">Overview</h2>
             <h4>Blocks, Elements and Modifiers</h4>
             <p>
@@ -167,7 +175,11 @@
 <b>Using SASS Import : </b>
 <pre>
 <code class="language-markup">
-@import "./bem-kit/src/scss/_bem-kit";
+// if you want import all classes
+@import "./bem-kit/src/_bem-kit";
+
+// if you want import RULES only without classes
+@import "./bem-kit/src/_bem-kit";
 </code>
 </pre>
 
@@ -184,7 +196,7 @@
 
           </section>
 
-          <section class="content__typography" id="typography">
+          <section class="content--typography" id="typography">
             <h2 class="content__title">Typography</h2>
             <div class="content__wrapper">
               <div class="content__col-sm">              
@@ -221,7 +233,7 @@
               </div>
           </section>
 
-          <section class="content__grids" id="grids">
+          <section class="content--grids" id="grids">
             <h2 class="content__title">Grids</h2>          
             <h4>Row And Columns</h4>
             <div class="content__wrapper grid">
@@ -293,7 +305,64 @@
 
           </section>
 
-          <section class="content__buttons" id="buttons">
+          <section class="content--labels" id="labels">
+            <h2 class="content__title">Labels</h2>
+            <h4>Label Flat</h4>
+            <div class="content__wrapper">
+              <span class="label label--green">label--green</span>
+              <span class="label label--green">99</span>
+              <span class="label label--red">label--red</span>
+              <span class="label label--red">99</span>
+              <span class="label label--blue">label--blue</span>
+              <span class="label label--blue">99</span>
+              <span class="label label--orange">label--orange</span>
+              <span class="label label--orange">99</span>
+              <span class="label label--gray">label--gray</span>
+              <span class="label label--gray">99</span>
+            </div>
+            <h4>Label Radius</h4>
+            <div class="content__wrapper">
+              <span class="label label--green label--radius">label--green</span>
+              <span class="label label--green label--radius">99</span>
+              <span class="label label--red label--radius">label--red</span>
+              <span class="label label--red label--radius">99</span>
+              <span class="label label--blue label--radius">label--blue</span>
+              <span class="label label--blue label--radius">99</span>
+              <span class="label label--orange label--radius">label--orange</span>
+              <span class="label label--orange label--radius">99</span>
+              <span class="label label--gray label--radius">label--gray</span>
+              <span class="label label--gray label--radius">99</span>
+            </div>
+            <h4>Label Outline</h4>
+            <div class="content__wrapper">
+              <span class="label label-outline--green">label--green</span>
+              <span class="label label-outline--green">99</span>
+              <span class="label label-outline--red">label--red</span>
+              <span class="label label-outline--red">99</span>
+              <span class="label label-outline--blue">label--blue</span>
+              <span class="label label-outline--blue">99</span>
+              <span class="label label-outline--orange">label--orange</span>
+              <span class="label label-outline--orange">99</span>
+              <span class="label label-outline--gray">label--gray</span>
+              <span class="label label-outline--gray">99</span>
+            </div>
+            <h4>Label Outline Radius</h4>
+            <div class="content__wrapper">
+              <span class="label label-outline--green label--radius">label--green</span>
+              <span class="label label-outline--green label--radius">99</span>
+              <span class="label label-outline--red label--radius">label--red</span>
+              <span class="label label-outline--red label--radius">99</span>
+              <span class="label label-outline--blue label--radius">label--blue</span>
+              <span class="label label-outline--blue label--radius">99</span>
+              <span class="label label-outline--orange label--radius">label--orange</span>
+              <span class="label label-outline--orange label--radius">99</span>
+              <span class="label label-outline--gray label--radius">label--gray</span>
+              <span class="label label-outline--gray label--radius">99</span>
+            </div>
+
+          </section>
+
+          <section class="content--buttons" id="buttons">
             <h2 class="content__title">Buttons</h2>
             <h4>Button</h4>
             <div class="content__wrapper">
@@ -426,7 +495,7 @@
 
           </section>
 
-          <section class="content__forms" id="forms">
+          <section class="content--forms" id="forms">
             <h2 class="content__title">Forms</h2>
             <h4>Textfield</h4>
             <div class="content__wrapper">
@@ -498,6 +567,15 @@
             </div>
 
             <div class="content__wrapper">
+              <input class="checkbox checkbox--blue" type="checkbox" id="checkbox2-1" name="checkbox2"/>
+              <label for="checkbox2-1">Check 1</label>
+              <input class="checkbox checkbox--blue" type="checkbox" id="checkbox2-2" name="checkbox2"/>
+              <label for="checkbox2-2">Check 2</label>
+              <input class="checkbox checkbox--blue" type="checkbox" disabled="true" id="checkbox2-3" name="checkbox2"/>
+              <label for="checkbox2-3">Check 3 Disabled</label>
+            </div>
+
+            <div class="content__wrapper">
 <pre><code class="language-markup">
 &lt;!-- snippet code for checkbox --&gt;
 &lt;input class="checkbox" type="checkbox" id="checkbox-1" name"checkbox"/&gt;
@@ -514,12 +592,16 @@
               <label for="radio-1">Yes</label>
               <input class="radio" type="radio" id="radio-2" name="radio"/>
               <label for="radio-2">No</label>     
+              <input class="radio" type="radio" id="radio-3" name="radio" disabled="true"/>
+              <label for="radio-3">Disabled</label>     
             </div>
             <div class="content__wrapper">
-              <input class="radio radio--blue" type="radio" id="radio-3" name="radio-blue"/>
-              <label for="radio-3">Yes</label>
               <input class="radio radio--blue" type="radio" id="radio-4" name="radio-blue"/>
-              <label for="radio-4">No</label>       
+              <label for="radio-4">Yes</label>
+              <input class="radio radio--blue" type="radio" id="radio-5" name="radio-blue"/>
+              <label for="radio-5">No</label>   
+              <input class="radio radio--blue" type="radio" id="radio-6" name="radio-blue" disabled="true"/>
+              <label for="radio-6">Disabled</label>       
             </div>
 
             <div class="content__wrapper">
@@ -752,7 +834,7 @@
 
           </section>
 
-          <section class="content__card" id="card">
+          <section class="content--card" id="card">
             <h2 class="content__title">Card</h2>
             
             <h4>Card Flat</h4>
@@ -894,7 +976,7 @@
 
           </section>
 
-          <section class="content__card" id="modal">
+          <section class="content--modal" id="modal">
             <h2 class="content__title">Modal</h2>
             <div class="content__wrapper"> 
 
@@ -1021,7 +1103,7 @@
             </div>
           </section>
 
-          <section class="content__table" id="table">
+          <section class="content--table" id="table">
             <h2 class="content__title">Table</h2>
             <div class="content__wrapper">              
                 
