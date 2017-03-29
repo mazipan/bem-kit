@@ -9,7 +9,7 @@
         {
             position: relative;
             display: block;
-            padding: 10px 15px;
+            padding: 1.3em;
             text-decoration: none;
 
             &:hover
@@ -32,13 +32,14 @@
     &__itemv
     {
         display: block;
-        margin: .2em 0;
+        margin: .3em 0;
+        max-width: 200px;
 
         a
         {
             position: relative;
             display: block;
-            padding: 10px 15px;
+            padding: 1.3em;
             background-color: $greyLighter;
             text-decoration: none;
 
