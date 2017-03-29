@@ -1,7 +1,7 @@
 {
   "name": "bem-kit",
   "description": "CSS UI Kit Component for BEM Convention Fans",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "keywords": [
     "css",
     "bem",
@@ -13,9 +13,8 @@
   "homepage": "https://mazipan.github.io/bem-kit/demo/",
   "author": "Irfan Maulana (https://github.com/mazipan/)",
   "scripts": {
-    "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./grunt/npm-shrinkwrap.json",
-    "build:dev": "gulp",
-    "build:prod": "gulp build:prod",
+    "dev": "gulp build:dev",
+    "prod": "gulp build:prod",
     "test": "mocha"
   },
   "repository": {
@@ -32,19 +31,7 @@
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^6.5.1",
-    "grunt": "^1.0.1",
-    "grunt-banner": "^0.6.0",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-cli": "^1.1.0",
-    "grunt-concurrent": "^2.2.1",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-concat": "^1.0.0",
-    "grunt-contrib-csslint": "^2.0.0",
-    "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-uglify": "^2.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^1.2.1",
+    "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean": "^0.3.2",
