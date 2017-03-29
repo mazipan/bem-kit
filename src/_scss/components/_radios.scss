@@ -4,11 +4,8 @@
 {
     @extend %radio;
     
-    &--blue + label
+    &--blue
     {
-        &:before, &:after
-        {
-            color: $blue;
-        }
+        @extend %radio--blue;
     }
 }

@@ -3,4 +3,9 @@
 .checkbox
 {
     @extend %checkbox;
+    
+    &--blue
+    {
+        @extend %checkbox--blue;
+    }
 }
