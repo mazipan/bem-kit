@@ -1,7 +1,15 @@
-UI Kit that implemented BEM CSS for class naming standard.
+CSS UI Kit using BEM in class naming standard.
 
 ## Homepage
 https://mazipan.github.io/bem-kit/
+
+## Why BEM-Kit ?
+- Using beautiful classname with BEM standard.
+- All component was crafted from zero.
+- You can choose to import RULES only without produce any css classes.
+- You can customize your own classname with rules we provided.
+- You can partialy import from our available component.
+- Full SASS modular code. 
 
 ## Download
 ```
@@ -23,7 +31,12 @@ https://mazipan.github.io/bem-kit/demo/
 
 ### Using SASS Import : 
 ```scss
-@import "./bem-kit/src/scss/_bem-kit";
+// if you want import all classes
+@import "./bem-kit/src/bem-kit.scss";
+
+
+// if you want import RULES only without classes
+@import "./bem-kit/src/_bem-kit";
 ```
 
 ### Added Javascript Functionality (Optional)
@@ -49,9 +62,9 @@ https://mazipan.github.io/bem-kit/demo/
 - textfield (basic for input text and textarea)
 
 ## Using Technology</h3>
-- SCSS from SASS 
+- SASS 
 - HTML
-- NodeJS, Grunt and Gulp, etc.
+- NodeJS, Gulp, etc.
 
 ## License
 MIT License
