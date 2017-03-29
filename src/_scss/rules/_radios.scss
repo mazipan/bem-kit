@@ -2,11 +2,11 @@
 {
     position: absolute;
     left: -9999px;
-
     & + label
     {
         position: relative;
-        padding: 10px 30px;
+        display: inline-block;
+        padding: 2px 30px;
         cursor: pointer;
 
         &:before,
@@ -14,55 +14,68 @@
         {
             position: absolute;
             top: 0;
-            left: 0;
-            color: $black;
-            font-size: 2.8rem;
+            content: '';
             transition: all .2s;
         }
         &:before
         {
-            content: '\25CE';
-            opacity: 1;
+            left: 3px;
+            width: 12px;
+            height: 12px;
+            margin-top: 3px;
+            border: 1px solid $black;
+            border-radius: 50%;
+            @include transition(background-color .25s);
         }
         &:after
         {
-            content: '\25C9';
-            opacity: 0;
+            left: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid $black;
+            border-radius: 50%;
         }
     }
     &:checked
     {
         & + label:before
         {
-            opacity: 0;
-        }
-        & + label:after
-        {
-            opacity: 1;
+            background-color: $black;
         }
     }
     &:disabled
     {
         & + label
         {
-            color: #aaa;
+            color: $greyLight;
         }
         & + label:before
         {
-            border-color: #bbb;
-            background-color: #ddd;
-            box-shadow: none;
+            border: 1px solid $greyLight;
         }
         & + label:after
         {
-            color: #999;
+            border: 1px solid $greyLight;
         }
     }
-    &--blue + label
+
+
+    &--blue
     {
-        &:before, &:after
+        & + label {
+           &:before,
+           &:after
+            {
+                border: 1px solid $blue;
+            } 
+        }
+        &:checked
         {
-            color: $blue;
+            & + label:before
+            {
+                background-color: $blue;
+            }
         }
     }
+    
 }
