@@ -1,4 +1,11 @@
-CSS UI Kit using BEM in class naming standard.
+[![License](https://img.shields.io/github/license/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit) 
+[![Github Issue](https://img.shields.io/github/issues/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/issues) 
+[![GitHub Fork](https://img.shields.io/github/forks/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/network) 
+[![GitHub Star](https://img.shields.io/github/stars/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/stargazers) 
+[![GitHub Contributors](https://img.shields.io/github/contributors/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/network/members)
+
+![BEM-KIT CSS](https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png)
+### CSS UI Kit using BEM in class naming standard.
 
 ## Homepage
 https://mazipan.github.io/bem-kit/
