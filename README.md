@@ -4,6 +4,11 @@
 [![GitHub Star](https://img.shields.io/github/stars/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/stargazers) 
 [![GitHub Contributors](https://img.shields.io/github/contributors/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/network/members)
 
+
+[![version](https://img.shields.io/npm/v/bem-kit.svg?maxAge=3600)](https://www.npmjs.com/package/bem-kit)
+[![downloads](https://img.shields.io/npm/dt/bem-kit.svg?maxAge=3600)](https://www.npmjs.com/package/bem-kit) 
+
+
 ![BEM-KIT CSS](https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png)
 ### CSS UI Kit using BEM in class naming standard.
 
@@ -19,12 +24,22 @@ https://mazipan.github.io/bem-kit/
 - Full SASS modular code. 
 
 ## Download
+
+#### npm
+[![npmjs](https://img.shields.io/badge/download-npmjs-red.svg?maxAge=3600)](https://www.npmjs.com/package/bem-kit) 
 ```
 npm install bem-kit --save
--- OR --
+```
+#### yarn
+[![yarnpkg](https://img.shields.io/badge/download-yarn-blue.svg?maxAge=3600)](https://yarnpkg.com/en/package/bem-kit)
+```
 yarn add bem-kit
 ```
-Or download latest release here : https://github.com/mazipan/bem-kit/releases
+#### ZIP 
+https://github.com/mazipan/bem-kit/releases
+
+#### CDN
+https://mazipan.github.io/bem-kit/dist/bem-kit.min.css
 
 ## Demo And Cheatsheet
 https://mazipan.github.io/bem-kit/demo/
