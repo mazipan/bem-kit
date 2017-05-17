@@ -1,5 +1,5 @@
 /*!
- * bem-kit v0.0.4
+ * bem-kit v0.0.5
  * @author : Irfan Maulana
  * https://github.com/mazipan/bem-kit
  */
@@ -126,19 +126,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-1 { width: 8.33333%; } }
 
-.grid__col-m-1 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-1 { width: 8.33333%; } }
-
 .grid__offset-1 { margin-left: 8.33333%; }
 
 .grid__col-2 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-2 { width: 16.66667%; } }
-
-.grid__col-m-2 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-2 { width: 16.66667%; } }
 
 .grid__offset-2 { margin-left: 16.66667%; }
 
@@ -146,19 +138,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-3 { width: 25%; } }
 
-.grid__col-m-3 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-3 { width: 25%; } }
-
 .grid__offset-3 { margin-left: 25%; }
 
 .grid__col-4 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-4 { width: 33.33333%; } }
-
-.grid__col-m-4 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-4 { width: 33.33333%; } }
 
 .grid__offset-4 { margin-left: 33.33333%; }
 
@@ -166,19 +150,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-5 { width: 41.66667%; } }
 
-.grid__col-m-5 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-5 { width: 41.66667%; } }
-
 .grid__offset-5 { margin-left: 41.66667%; }
 
 .grid__col-6 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-6 { width: 50%; } }
-
-.grid__col-m-6 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-6 { width: 50%; } }
 
 .grid__offset-6 { margin-left: 50%; }
 
@@ -186,19 +162,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-7 { width: 58.33333%; } }
 
-.grid__col-m-7 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-7 { width: 58.33333%; } }
-
 .grid__offset-7 { margin-left: 58.33333%; }
 
 .grid__col-8 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-8 { width: 66.66667%; } }
-
-.grid__col-m-8 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-8 { width: 66.66667%; } }
 
 .grid__offset-8 { margin-left: 66.66667%; }
 
@@ -206,19 +174,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-9 { width: 75%; } }
 
-.grid__col-m-9 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-9 { width: 75%; } }
-
 .grid__offset-9 { margin-left: 75%; }
 
 .grid__col-10 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-10 { width: 83.33333%; } }
-
-.grid__col-m-10 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-10 { width: 83.33333%; } }
 
 .grid__offset-10 { margin-left: 83.33333%; }
 
@@ -226,19 +186,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-11 { width: 91.66667%; } }
 
-.grid__col-m-11 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-11 { width: 91.66667%; } }
-
 .grid__offset-11 { margin-left: 91.66667%; }
 
 .grid__col-12 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-12 { width: 100%; } }
-
-.grid__col-m-12 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-12 { width: 100%; } }
 
 .grid__offset-12 { margin-left: 100%; }
 
@@ -634,19 +586,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-1 { width: 8.33333%; } }
 
-.grid__col-m-1 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-1 { width: 8.33333%; } }
-
 .grid__offset-1 { margin-left: 8.33333%; }
 
 .grid__col-2 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-2 { width: 16.66667%; } }
-
-.grid__col-m-2 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-2 { width: 16.66667%; } }
 
 .grid__offset-2 { margin-left: 16.66667%; }
 
@@ -654,19 +598,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-3 { width: 25%; } }
 
-.grid__col-m-3 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-3 { width: 25%; } }
-
 .grid__offset-3 { margin-left: 25%; }
 
 .grid__col-4 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-4 { width: 33.33333%; } }
-
-.grid__col-m-4 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-4 { width: 33.33333%; } }
 
 .grid__offset-4 { margin-left: 33.33333%; }
 
@@ -674,19 +610,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-5 { width: 41.66667%; } }
 
-.grid__col-m-5 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-5 { width: 41.66667%; } }
-
 .grid__offset-5 { margin-left: 41.66667%; }
 
 .grid__col-6 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-6 { width: 50%; } }
-
-.grid__col-m-6 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-6 { width: 50%; } }
 
 .grid__offset-6 { margin-left: 50%; }
 
@@ -694,19 +622,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-7 { width: 58.33333%; } }
 
-.grid__col-m-7 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-7 { width: 58.33333%; } }
-
 .grid__offset-7 { margin-left: 58.33333%; }
 
 .grid__col-8 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-8 { width: 66.66667%; } }
-
-.grid__col-m-8 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-8 { width: 66.66667%; } }
 
 .grid__offset-8 { margin-left: 66.66667%; }
 
@@ -714,19 +634,11 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-9 { width: 75%; } }
 
-.grid__col-m-9 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-9 { width: 75%; } }
-
 .grid__offset-9 { margin-left: 75%; }
 
 .grid__col-10 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-10 { width: 83.33333%; } }
-
-.grid__col-m-10 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-10 { width: 83.33333%; } }
 
 .grid__offset-10 { margin-left: 83.33333%; }
 
@@ -734,23 +646,13 @@ textarea { resize: none; }
 
 @media only screen and (min-width: 768px) { .grid__col-11 { width: 91.66667%; } }
 
-.grid__col-m-11 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-11 { width: 91.66667%; } }
-
 .grid__offset-11 { margin-left: 91.66667%; }
 
 .grid__col-12 { float: left; width: 100%; }
 
 @media only screen and (min-width: 768px) { .grid__col-12 { width: 100%; } }
 
-.grid__col-m-12 { float: left; }
-
-@media only screen and (min-width: 600px) { .grid__col-m-12 { width: 100%; } }
-
 .grid__offset-12 { margin-left: 100%; }
-
-.grid { /* [class*="col-"] { } */ }
 
 .button { display: inline-block; padding: 13px 20px; outline: none; border: none; text-align: center; text-decoration: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 

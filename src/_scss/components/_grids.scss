@@ -14,22 +14,10 @@ $columnCount : 12 !default;
 		@extend %flex;
 	}
 
-	/*
-	[class*="col-"] {
-
-	}
-	*/
-
 	@for $i from 1 through $columnCount {
 		&__col-#{$i}{
 			@extend %col-#{$i};
 		}	
-	}
-
-	@for $i from 1 through $columnCount {
-		&__col-m-#{$i}{
-			@extend %col-m-#{$i};
-		}
 	}
 
 	@for $i from 1 through $columnCount {

@@ -1,5 +1,5 @@
 /*!
- * bem-kit v0.0.4
+ * bem-kit v0.0.5
  * @author : Irfan Maulana
  * https://github.com/mazipan/bem-kit
  */
@@ -240,6 +240,14 @@ textarea { resize: none; }
 
 .grid__col-12 { padding: 1em 0; border: 1px solid #999; text-align: center; }
 
+.grid__col-13 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__col-14 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__col-15 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__col-16 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
 .grid__offset-1 { padding: 1em 0; border: 1px solid #999; text-align: center; }
 
 .grid__offset-2 { padding: 1em 0; border: 1px solid #999; text-align: center; }
@@ -263,6 +271,14 @@ textarea { resize: none; }
 .grid__offset-11 { padding: 1em 0; border: 1px solid #999; text-align: center; }
 
 .grid__offset-12 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__offset-13 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__offset-14 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__offset-15 { padding: 1em 0; border: 1px solid #999; text-align: center; }
+
+.grid__offset-16 { padding: 1em 0; border: 1px solid #999; text-align: center; }
 
 /*
 -- FOR DEMO ONLY --

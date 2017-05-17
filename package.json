@@ -1,7 +1,7 @@
 {
   "name": "bem-kit",
   "description": "CSS UI Kit Component for BEM Convention Fans",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "keywords": [
     "css",
     "bem",
@@ -38,12 +38,14 @@
     "gulp-clean-css": "^3.0.2",
     "gulp-connect": "^5.0.0",
     "gulp-header": "^1.8.8",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^2.0.1",
     "gulp-watch": "^4.3.11",
     "jsdom": "^9.8.3",
     "mocha": "^2.2.5",
+    "pump": "^1.0.2",
     "should": "^7.0.2"
   }
 }
