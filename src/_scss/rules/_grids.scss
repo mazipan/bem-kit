@@ -2,6 +2,28 @@
 	@include clearfix();
 }
 
+%container {
+  max-width: 1146px;
+  margin: auto;
+  @include clearfix();
+
+  @media (max-width: 980px) {
+    padding: 0 15px;
+  }
+
+  @media (min-width: 960px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1080px) {
+    max-width: 1040px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1146px;
+  }
+}
+
 %row {
 	@include clearfix();
 	margin: 0 auto;
@@ -14,31 +36,22 @@
     align-items: center;
 }
 
-$columnCount 		: 12 !default;
-$breakPointDesktop 	: 768 !default;
-$breakPointTablet	: 600 !default;
+$column-count 		: 12 !default;
+$breakpoint-desktop : 768 !default;
+$breakpoint-tablet	: 600 !default;
 
-@for $i from 1 through $columnCount {
+@for $i from 1 through $column-count {
 	%col-#{$i}{
 		float: left;
 		width: 100%;
 
-		@media only screen and (min-width: #{$breakPointDesktop}px) {
-			width: ((100/$columnCount) * $i) *1%;
-		}
-		
-	}
-
-	%col-m-#{$i}{
-		float: left;
-
-		@media only screen and (min-width: #{$breakPointTablet}px) {
-			width: ((100/$columnCount) * $i) *1%;
+		@media only screen and (min-width: #{$breakpoint-desktop}px) {
+    		width: percentage($i/$column-count);
 		}
 		
 	}
 
 	%offset-#{$i}{
-		margin-left: ((100/$columnCount) * $i) *1%;
+    	margin-left: percentage($i/$column-count);
 	}
 }
