@@ -283,7 +283,7 @@ textarea { resize: none; }
 /*
 -- FOR DEMO ONLY --
 */
-.button { margin: .1em; }
+.button, .label { margin: .1em; }
 
 .popover { text-align: center; padding: 1em 0; border: 1px solid #999; }
 

@@ -566,7 +566,7 @@ textarea { resize: none; }
 
 .label-outline--white { border: 1px solid #fff; color: #fff; }
 
-.label--radius { border-radius: 2em; }
+.label--radius { border-radius: 2em; padding: .1em .8em .2em .8em; }
 
 .clearfix { *zoom: 1; }
 
@@ -1026,4 +1026,4 @@ textarea { resize: none; }
 
 .label-outline--white { border: 1px solid #fff; color: #fff; }
 
-.label--radius { border-radius: 2em; }
+.label--radius { border-radius: 2em; padding: .1em .8em .2em .8em; }
