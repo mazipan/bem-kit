@@ -6,6 +6,10 @@ $columnCount : 12 !default;
 	@extend %clearfix;
 }
 
+.container{
+	@extend %container;
+}
+
 .grid{
 	&__row{
 		@extend %row;
