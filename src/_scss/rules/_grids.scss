@@ -37,21 +37,20 @@
 }
 
 $column-count 		: 12 !default;
-$breakpoint-desktop : 768 !default;
-$breakpoint-tablet	: 600 !default;
+$desktop          : 768 !default;
 
 @for $i from 1 through $column-count {
 	%col-#{$i}{
 		float: left;
 		width: 100%;
 
-		@media only screen and (min-width: #{$breakpoint-desktop}px) {
-    		width: percentage($i/$column-count);
+		@media (min-width: 768px) {
+    	width: percentage($i/$column-count);
 		}
 		
 	}
 
 	%offset-#{$i}{
-    	margin-left: percentage($i/$column-count);
+    margin-left: percentage($i/$column-count);
 	}
 }

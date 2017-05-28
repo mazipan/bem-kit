@@ -122,19 +122,19 @@ textarea { resize: none; }
 
 .main__nav { float: left; width: 100%; }
 
-@media only screen and (min-width: 768px) { .main__nav { width: 16.66667%; } }
+@media (min-width: 768px) { .main__nav { width: 16.66667%; } }
 
 .content__col-sm { float: left; width: 100%; }
 
-@media only screen and (min-width: 768px) { .content__col-sm { width: 33.33333%; } }
+@media (min-width: 768px) { .content__col-sm { width: 33.33333%; } }
 
 .content__col-lg { float: left; width: 100%; }
 
-@media only screen and (min-width: 768px) { .content__col-lg { width: 66.66667%; } }
+@media (min-width: 768px) { .content__col-lg { width: 66.66667%; } }
 
 .main__content { float: left; width: 100%; }
 
-@media only screen and (min-width: 768px) { .main__content { width: 83.33333%; } }
+@media (min-width: 768px) { .main__content { width: 83.33333%; } }
 
 @-webkit-keyframes animatetop { from { top: -300px;
     opacity: 0; }
