@@ -1,5 +1,5 @@
 /*!
- * bem-kit v0.0.5
+ * bem-kit v0.0.6
  * @author : Irfan Maulana
  * https://github.com/mazipan/bem-kit
  */
@@ -104,7 +104,9 @@ a:hover, a:focus { text-decoration: underline; }
 
 code, kbd, pre, samp { background-color: #F2F2F2; padding: .1em .5em; border-radius: .1em; }
 
-blockquote { padding: 10px; margin: 0 0 20px; font-size: 1.6rem; border-left: 5px solid #eee; }
+pre { border-left: solid 0.25em #0096D9; }
+
+blockquote { padding: 10px; margin: 0 0 20px; font-size: 1.6rem; border-left: 5px solid #0096D9; }
 
 textarea { resize: none; }
 

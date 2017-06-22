@@ -23,16 +23,20 @@ a {
 }
 
 code, kbd, pre, samp {
-    background-color: $greyLighter;
-    padding: .1em .5em;
-    border-radius: .1em;
+  background-color: $greyLighter;
+  padding: .1em .5em;
+  border-radius: .1em;
+}
+
+pre{
+  border-left: solid .25em $blue;  
 }
 
 blockquote{
   padding: 10px;
   margin: 0 0 20px;
   font-size: 1.6rem;
-  border-left: 5px solid #eee;
+  border-left: 5px solid $blue;
 }
 
 textarea {
