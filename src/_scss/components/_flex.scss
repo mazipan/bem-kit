@@ -1,0 +1,11 @@
+.flex{
+	&__row{
+		@extend %flex__row;
+	}
+	&__col{
+		@extend %flex__col;
+	}
+	&__wrap{
+		@extend %flex__wrap;
+	}
+}
