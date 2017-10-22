@@ -1,4 +1,4 @@
-# Contributing to Vue Currency Filter
+# Contributing to BEM-Kit
 
 Looking to contribute something? **Here's how you can help.**
 
