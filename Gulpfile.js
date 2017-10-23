@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
+var gzip = require('gulp-gzip');
 
 var input = ['./src/**/*.scss'];
 var output = './dist';
@@ -75,6 +76,7 @@ gulp.task('uglify-js', ['clean'], function(cb) {
     pump([
         gulp.src('./src/*.js'),
         uglify(),
+        gzip(),
         gulp.dest(output)
     ], cb);
 
@@ -91,6 +93,7 @@ gulp.task('rename', ['sass', 'uglify-js'], function() {
 gulp.task('minify-css', ['rename'], function() {
     return gulp.src('./dist/*.min.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gzip())
         .pipe(gulp.dest(output));
 });
 

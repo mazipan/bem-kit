@@ -1,7 +1,7 @@
 {
   "name": "bem-kit",
   "description": "CSS UI Kit Component for BEM Convention Fans",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "keywords": [
     "css",
     "bem",
@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "gulp build:dev",
     "prod": "gulp build:prod",
-    "test": "mocha"
+    "dist": "gulp build:prod",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -30,22 +31,20 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
-    "browser-sync": "^2.18.8",
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
-    "gulp-clean-css": "^3.0.2",
+    "gulp-clean-css": "^3.9.0",
     "gulp-connect": "^5.0.0",
-    "gulp-header": "^1.8.8",
+    "gulp-gzip": "^1.4.0",
+    "gulp-header": "^1.8.9",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.4.0",
-    "gulp-uglify": "^2.0.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
-    "jsdom": "^9.8.3",
-    "mocha": "^2.2.5",
-    "pump": "^1.0.2",
-    "should": "^7.0.2"
+    "pump": "^1.0.2"
   }
 }
