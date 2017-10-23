@@ -288,7 +288,7 @@ textarea { resize: none; }
 
 .checkbox + label:before { position: absolute; top: 4px; left: 0; width: 18px; height: 18px; border: 1px solid #CCC; border-radius: 1px; background-color: #fff; content: ''; }
 
-.checkbox + label:after { position: absolute; color: #fff; content: ''; border-top: 2px solid transparent; border-left: 2px solid transparent; border-right: 2px solid #fff; border-bottom: 2px solid #fff; -webkit-transform: rotate(37deg); transform: rotate(37deg); -webkit-transition: border 0.25s, background-color 0.25s; transition: border 0.25s, background-color 0.25s; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%; }
+.checkbox + label:after { position: absolute; color: #fff; content: ''; border-top: 2px solid transparent; border-left: 2px solid transparent; border-right: 2px solid #fff; border-bottom: 2px solid #fff; -webkit-transform: rotate(37deg); transform: rotate(37deg); transition: border 0.25s, background-color 0.25s; -webkit-transform-origin: 100% 100%; transform-origin: 100% 100%; }
 
 .checkbox:not(:checked) + label:after { width: 0; height: 0; top: 6px; left: 1px; }
 
@@ -308,9 +308,9 @@ textarea { resize: none; }
 
 .radio + label { position: relative; display: inline-block; padding: 2px 30px; cursor: pointer; }
 
-.radio + label:before, .radio + label:after { position: absolute; top: 0; content: ''; -webkit-transition: all .2s; transition: all .2s; }
+.radio + label:before, .radio + label:after { position: absolute; top: 0; content: ''; transition: all .2s; }
 
-.radio + label:before { left: 3px; width: 12px; height: 12px; margin-top: 3px; border: 1px solid #000; border-radius: 50%; -webkit-transition: background-color 0.25s; transition: background-color 0.25s; }
+.radio + label:before { left: 3px; width: 12px; height: 12px; margin-top: 3px; border: 1px solid #000; border-radius: 50%; transition: background-color 0.25s; }
 
 .radio + label:after { left: 0; width: 18px; height: 18px; border: 1px solid #000; border-radius: 50%; }
 
@@ -472,7 +472,7 @@ textarea { resize: none; }
 
 .alert--white .alert__close:hover { text-decoration: none; }
 
-.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); -webkit-transition: 0.3s; transition: 0.3s; }
+.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); transition: 0.3s; }
 
 .card:hover { box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
 
@@ -510,7 +510,7 @@ textarea { resize: none; }
 
 .popover { position: relative; cursor: pointer; }
 
-.popover__content { visibility: hidden; background-color: #1a1a1a; color: #fff; text-align: center; border-radius: 6px; padding: 1em; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; -webkit-transition: opacity 1s; transition: opacity 1s; }
+.popover__content { visibility: hidden; background-color: #1a1a1a; color: #fff; text-align: center; border-radius: 6px; padding: 1em; position: absolute; z-index: 1; bottom: 125%; left: 50%; margin-left: -60px; opacity: 0; transition: opacity 1s; }
 
 .popover__content:after { content: ""; position: absolute; top: 100%; left: 50%; margin-left: -5px; border-width: 5px; border-style: solid; border-color: #1a1a1a transparent transparent transparent; }
 
@@ -589,3 +589,13 @@ textarea { resize: none; }
 .label-outline--white { border: 1px solid #fff; color: #fff; }
 
 .label--radius { border-radius: 2em; padding: .1em .8em .2em .8em; }
+
+.badge { border-radius: 0.25em; border: 1px solid #CCC; }
+
+.badge__item { line-height: 1.5rem; padding: 10px 20px; display: block; margin: 0; border-bottom: 1px solid #CCC; }
+
+.badge__item:last-child { border: 0; }
+
+.badge__info { min-width: 3rem; padding: 0 6px; text-align: center; font-size: 1.2rem; line-height: 22px; height: 22px; color: #757575; float: right; margin-top: calc(.75rem - 11px); }
+
+.badge--state-new { background-color: #89C747; color: #fff; font-size: .8rem; }
