@@ -1,5 +1,5 @@
 /*!
- * bem-kit v0.0.7
+ * bem-kit v0.0.8
  * @author : Irfan Maulana
  * https://github.com/mazipan/bem-kit
  */
@@ -43,11 +43,7 @@
   to { top: 0;
     opacity: 1; } }
 
-/*
--- SITE BLOCK --
-* every block should in seperate file 
-* for demo I combine into one file
-*/
+/* -- SITE BLOCK -- every block should in seperate file  for demo I combine into one file */
 .site { margin: 0; }
 
 .site__main { margin-top: 60px; }

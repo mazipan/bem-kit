@@ -76,7 +76,6 @@ gulp.task('uglify-js', ['clean'], function(cb) {
     pump([
         gulp.src('./src/*.js'),
         uglify(),
-        gzip(),
         gulp.dest(output)
     ], cb);
 
@@ -93,11 +92,17 @@ gulp.task('rename', ['sass', 'uglify-js'], function() {
 gulp.task('minify-css', ['rename'], function() {
     return gulp.src('./dist/*.min.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest(output));
+});
+
+
+gulp.task('gzip', ['rename'], function() {
+    return gulp.src(["./dist/*.min.css", "./dist/*.min.js"])
         .pipe(gzip())
         .pipe(gulp.dest(output));
 });
 
 
-gulp.task('build:prod', ['clean', 'sass', 'uglify-js', 'rename', 'minify-css']);
+gulp.task('build:prod', ['clean', 'sass', 'uglify-js', 'rename', 'minify-css', 'gzip']);
 gulp.task('build:dev', ['clean', 'sass', 'serve']);
 gulp.task('default', ['build:dev']);
