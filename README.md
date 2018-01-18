@@ -2,7 +2,7 @@
 
 ![BEM-KIT CSS](https://raw.githubusercontent.com/mazipan/bem-kit/master/demo/images/brand-blue.png)
 
-> CSS UI Kit using BEM in class naming standard.
+> CSS UI kit with BEM convention and SASS
 
 [![License](https://img.shields.io/github/license/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit) [![GitHub Star](https://img.shields.io/github/stars/mazipan/bem-kit.svg?maxAge=3600)](https://github.com/mazipan/bem-kit/stargazers) [![version](https://img.shields.io/npm/v/bem-kit.svg?maxAge=3600)](https://www.npmjs.com/package/bem-kit)
 
